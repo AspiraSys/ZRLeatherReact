@@ -3,7 +3,7 @@ import { Box, Typography, Container, Grid, Card, CardMedia, CardContent } from "
 import { styled } from "@mui/system";
 
 const Banner = styled(Box)({
-  backgroundImage: "url(/assets/AboutUs-banner.png)",
+  backgroundImage: "url(src/assets/images/AboutUs-banner.png)",
   backgroundSize: "cover",
   backgroundPosition: "center",
   height: "250px",
@@ -35,17 +35,17 @@ const AboutUs = () => {
     {
       title: "Premium Leather Selection",
       description: "We source the finest quality leather from trusted suppliers, ensuring durability and texture.",
-      image: "/assets/about-1.png",
+      image: "src/assets/images/about-1.png",
     },
     {
       title: "Expert Craftsmanship",
       description: "Our skilled artisans meticulously handcraft each piece, blending traditional techniques.",
-      image: "/assets/about-2.png",
+      image: "src/assets/images/about-2.png",
     },
     {
       title: "Quality Assurance",
       description: "Every product undergoes rigorous quality checks to maintain the highest standards.",
-      image: "/assets/about-3.png",
+      image: "src/assets/images/about-3.png",
     },
   ];
 
@@ -84,7 +84,7 @@ const AboutUs = () => {
 
         <Grid item xs={12} md={6} sx={{ p: { xs: 3, md: 5 } }}>
           <Card sx={{ backgroundColor: "transparent", boxShadow: "none", display: "flex", justifyContent: "center" }}>
-            <CardMedia component="img" image="/assets/aboutus.png" alt="Leather Shoes" sx={{ maxWidth: "80%", height: "auto", width: { xs: "80%", md: "100%" } }} />
+            <CardMedia component="img" image="src/assets/images/aboutus.png" alt="Leather Shoes" sx={{ maxWidth: "80%", height: "auto", width: { xs: "80%", md: "100%" } }} />
           </Card>
         </Grid>
       </Grid>
