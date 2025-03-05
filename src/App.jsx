@@ -1,24 +1,34 @@
 import React from "react";
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
-import AboutUs from "../src/Pages/AboutUs";
+import { ThemeProvider, createTheme, CssBaseline, Grid } from "@mui/material";
+import { Provider } from "react-redux";
+import { store } from "./Stores/Stores";
+import FilterSidebar from "./Components/Additional/FilterSidebar";
+import ProductList from "./Components/Additional/ProductList";
 
 const theme = createTheme({
   palette: {
-    background: {
-      default: "#f8f8f8",
-    },
+    background: { default: "#f8f8f8" },
   },
   typography: {
-    fontFamily: "Arial, sans-serif",
+    fontFamily: "Poppins, sans-serif",
   },
 });
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <AboutUs />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={3}>
+            <FilterSidebar />
+          </Grid>
+          <Grid item xs={12} sm={9}>
+            <ProductList />
+          </Grid>
+        </Grid>
+      </ThemeProvider>
+    </Provider>
   );
 }
 

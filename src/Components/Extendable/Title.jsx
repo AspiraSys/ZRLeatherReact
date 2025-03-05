@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Footer() {
+function Title() {
   return (
     <div>
       
@@ -8,5 +8,4 @@ function Footer() {
   )
 }
 
-export default Footer
-
+export default Title
