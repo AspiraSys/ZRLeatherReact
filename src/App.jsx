@@ -1,9 +1,9 @@
 import React from "react";
 import { ThemeProvider, createTheme, CssBaseline, Grid } from "@mui/material";
 import { Provider } from "react-redux";
-import { store } from "./Stores/Stores";
-import FilterSidebar from "./Components/Additional/FilterSidebar";
-import ProductList from "./Components/Additional/ProductList";
+import { store } from "../src/Stores/Stores";
+import Filter from "../src/Pages/Categories/Footwear"
+// import AboutUs from "../src/Pages/AboutUs"
 
 const theme = createTheme({
   palette: {
@@ -19,15 +19,9 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <Grid container spacing={2}>
-          <Grid item xs={12} sm={3}>
-            <FilterSidebar />
-          </Grid>
-          <Grid item xs={12} sm={9}>
-            <ProductList />
-          </Grid>
-        </Grid>
       </ThemeProvider>
+      <Filter />
+      {/* <AboutUs /> */}
     </Provider>
   );
 }
