@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  products: [], // Yeh initial products ka empty array hai
+  products: [],
 };
 
 const productSlice = createSlice({
@@ -9,7 +9,7 @@ const productSlice = createSlice({
   initialState,
   reducers: {
     setProducts: (state, action) => {
-      state.products = action.payload; // Payload se products update honge
+      state.products = action.payload;
     },
   },
 });

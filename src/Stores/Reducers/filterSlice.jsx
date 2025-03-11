@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  highlights: "All",
+  highlight: "All",
   availability: "All",
-  style: "",
-  categories: "",
+  style: "All",
+  categories: "All",
   priceRange: [0, 5000],
 };
 
@@ -13,7 +13,7 @@ const filterSlice = createSlice({
   initialState,
   reducers: {
     setHighlight: (state, action) => {
-      state.highlights = action.payload;
+      state.highlight = action.payload;
     },
     setAvailability: (state, action) => {
       state.availability = action.payload;
