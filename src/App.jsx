@@ -1,16 +1,36 @@
 import React from "react";
-import { ThemeProvider, createTheme, CssBaseline, Grid } from "@mui/material";
+import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
 import { Provider } from "react-redux";
 import { store } from "../src/Stores/Stores";
-import Filter from "../src/Pages/Categories/Footwear"
-// import AboutUs from "../src/Pages/AboutUs"
+import AppRoutes from "./Routes/Routes";
 
 const theme = createTheme({
   palette: {
     background: { default: "#f8f8f8" },
+    primary: {
+      main: "rgba(0, 0, 0, 0.87)",
+      light: "#00000070",
+      brown: "#9B775C",
+    },
   },
   typography: {
     fontFamily: "Poppins, sans-serif",
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        "::-webkit-scrollbar": {
+          width: "6px",
+        },
+        "::-webkit-scrollbar-thumb": {
+          backgroundColor: "lightgrey",
+          borderRadius: "4px",
+        },
+        "::-webkit-scrollbar-track": {
+          background: "#f8f8f8",
+        },
+      },
+    },
   },
 });
 
@@ -19,9 +39,8 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <AppRoutes />
       </ThemeProvider>
-      <Filter />
-      {/* <AboutUs /> */}
     </Provider>
   );
 }

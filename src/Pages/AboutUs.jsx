@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography, Container, Grid, Card, CardMedia, CardContent } from "@mui/material";
 import { styled } from "@mui/system";
+import Bar from "../Components/Additional/Bar";
 
 const Banner = styled(Box)({
   backgroundImage: "url(src/assets/images/AboutUs-banner.png)",
@@ -50,6 +51,7 @@ const AboutUs = () => {
   ];
 
   return (
+    <>
     <Box sx={{ backgroundColor: "#f8f8f8" }}>
       <Banner>About Us</Banner>
 
@@ -113,6 +115,10 @@ const AboutUs = () => {
         </Grid>
       </Container>
     </Box>
+
+    {/* bar component */}
+    <Bar bgColor="#987760" buttonBarText="Get a discount on customized design"/>
+    </>
   );
 };
 
