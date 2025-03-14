@@ -49,7 +49,7 @@ export default function Bags() {
                                 sx={{
                                     fontWeight: "bold",
                                     color: "black",
-                                    fontSize:"40px",
+                                    fontSize:"45px",
                                 }}
                             >
                                 Luxury Leather Bags Now Up to <span style={{ color: "#A78870" }}>50% OFF!</span>

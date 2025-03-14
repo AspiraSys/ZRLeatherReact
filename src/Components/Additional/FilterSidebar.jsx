@@ -88,7 +88,7 @@ const FilterSidebar = () => {
         </AccordionDetails>
       </Accordion>
 
-      {/* Categories */}
+      {/* categories */}
       <Accordion>
         <AccordionSummary expandIcon={filters.categoriesExpanded ? <RemoveIcon /> : <AddIcon />}>
           <Typography>Shop by categories</Typography>
@@ -96,7 +96,7 @@ const FilterSidebar = () => {
         <AccordionDetails>
           <FormControl component="fieldset">
             <RadioGroup
-              value={filters.categories}
+              value={filters.categories} 
               onChange={(e) => dispatch(setCategories(e.target.value))}
             >
               {["Footwear", "Bags", "Wallets", "Belts"].map((item) => (

@@ -9,7 +9,7 @@ function CustomButton({
   padding,
   hoverStyles = {},
   swipeHover = false,
-  removeBorder=false
+  removeBorder=false,
 }) {
   return (
     <Button
@@ -27,6 +27,7 @@ function CustomButton({
         backgroundColor: "transparent",
         zIndex: 0,
         removeBorder: false,
+        fontSize:"11px",
         transition: "color 0.3s ease-in-out, background-color 0.3s ease-in-out",
 
         ...(swipeHover

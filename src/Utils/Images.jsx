@@ -26,6 +26,35 @@ import bags11 from "../../src/assets/Images/Bags-11.png";
 import bags12 from "../../src/assets/Images/Bags-12.png";
 import bagsbanner from "../../src/assets/Images/Bags-banner.png";
 
+import belts1 from "../../src/assets/Images/belts-1.png";
+import belts2 from "../../src/assets/Images/belts-2.png";
+import belts3 from "../../src/assets/Images/belts-3.png";
+import belts4 from "../../src/assets/Images/belts-4.png";
+import belts5 from "../../src/assets/Images/belts-5.png";
+import belts6 from "../../src/assets/Images/belts-6.png";
+import belts7 from "../../src/assets/Images/belts-7.png";
+import belts8 from "../../src/assets/Images/belts-8.png";
+import belts9 from "../../src/assets/Images/belts-9.png";
+import belts10 from "../../src/assets/Images/belts-10.png";
+import belts11 from "../../src/assets/Images/belts-11.png";
+import belts12 from "../../src/assets/Images/belts-12.png";
+import belts13 from "../../src/assets/Images/belts-13.png";
+import belts14 from "../../src/assets/Images/belts-14.png";
+import belts15 from "../../src/assets/Images/belts-15.png";
+
+import wallets1 from "../../src/assets/Images/wallets-1.png";
+import wallets2 from "../../src/assets/Images/wallets-2.png";
+import wallets3 from "../../src/assets/Images/wallets-3.png";
+import wallets4 from "../../src/assets/Images/wallets-4.png";
+import wallets5 from "../../src/assets/Images/wallets-5.png";
+import wallets6 from "../../src/assets/Images/wallets-6.png";
+import wallets7 from "../../src/assets/Images/wallets-7.png";
+import wallets8 from "../../src/assets/Images/wallets-8.png";
+import wallets9 from "../../src/assets/Images/wallets-9.png";
+import wallets10 from "../../src/assets/Images/wallets-10.png";
+import wallets11 from "../../src/assets/Images/wallets-11.png";
+import wallets12 from "../../src/assets/Images/wallets-12.png";
+
 const images = {
   logo: logo,
   footwear1: footwear1,
@@ -54,6 +83,35 @@ const images = {
   bags11: bags11,
   bags12: bags12,
   bagsbanner:bagsbanner,
+
+  belts1: belts1,
+  belts2: belts2,
+  belts3: belts3,
+  belts4: belts4,
+  belts5: belts5,
+  belts6: belts6,
+  belts7: belts7,
+  belts8: belts8,
+  belts9: belts9,
+  belts10:belts10,
+  belts11: belts11,
+  belts12: belts12,
+  belts13: belts13,
+  belts14: belts14,
+  belts15: belts15,
+
+  wallets1: wallets1,
+  wallets2: wallets2,
+  wallets3: wallets3,
+  wallets4: wallets4,
+  wallets5: wallets5,
+  wallets6: wallets6,
+  wallets7: wallets7,
+  wallets8: wallets8,
+  wallets9: wallets9,
+  wallets10:wallets10,
+  wallets11: wallets11,
+  wallets12: wallets12,
 }
 
 export default images;

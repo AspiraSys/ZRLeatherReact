@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Card, CardMedia, CardContent, Typography, Button, IconButton, Box, Chip } from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, IconButton, Box, Chip } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SearchIcon from "@mui/icons-material/Search";
 import ShareIcon from "@mui/icons-material/Share";
+import CustomButton from "../../Components/Additional/GlobalButton";
 
 const ProductCard = ({ product }) => {
   const [showIcons, setShowIcons] = useState(false);
@@ -69,7 +70,6 @@ const ProductCard = ({ product }) => {
         )}
       </Box>
 
-      
       <CardMedia
         component="img"
         height="200"
@@ -80,17 +80,14 @@ const ProductCard = ({ product }) => {
       />
 
       <CardContent sx={{ textAlign: "left" }}>
-        
         <Typography variant="h6" fontWeight={700} sx={{ color: "#000", fontSize: "18px" }}>
           {product.name}
         </Typography>
 
-    
         <Typography variant="h6" fontWeight={700} sx={{ color: "#000", fontFamily: "Poppins" }}>
           ₹{product.price}
         </Typography>
 
-       
         <Box display="flex" alignItems="center" justifyContent="space-between" my={1}>
           <Box display="flex" alignItems="center">
             {[...Array(5)].map((_, index) => (
@@ -112,33 +109,25 @@ const ProductCard = ({ product }) => {
 
         {/* Buttons */}
         <Box display="flex" justifyContent="space-between" mt={2}>
-          <Button
-            variant="outlined"
-            sx={{
-              flex: 1,
-              marginRight: "8px",
-              borderColor: "#D2B48C",
-              color: "#9B7355",
-              fontWeight: 600,
-              borderRadius: "8px",
-              fontSize: "9px",
-            }}
-          >
-            Buy Now
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              flex: 1,
-              borderColor: "#D2B48C",
-              color: "#9B7355",
-              fontWeight: 600,
-              borderRadius: "8px",
-              fontSize: "9px",
-            }}
-          >
-            Add to cart
-          </Button>
+          <CustomButton
+            text="Buy Now"
+            borderColor="#987760"
+            fontColor="#987760"
+            fontSize="4px"
+            padding={3.5}
+            hoverStyles={{ backgroundColor: "#987760", color: "white" }}
+            swipeHover={true}
+            removeBorder={true}
+          />
+          <CustomButton
+            text="Add to cart"
+            borderColor="#987760"
+            fontColor="#987760"
+            fontSize="4px"
+            hoverStyles={{ backgroundColor: "#987760", color: "white" }}
+            swipeHover={true}
+            removeBorder={true}
+          />
         </Box>
       </CardContent>
     </Card>

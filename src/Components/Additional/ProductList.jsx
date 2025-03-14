@@ -6,7 +6,7 @@ import { setProducts } from "../../Stores/Reducers/productSlice";
 import images from "../../Utils/Images";
 import productData from "../../Stores/Reducers/Data/products.json";
 
-const ProductList = () => {
+const ProductList = ({ category }) => {  // <-- Category prop add kiya
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
 
@@ -27,18 +27,23 @@ const ProductList = () => {
     ...product,
     image: images[product.image] || "",
   }));
-
+  
   let filteredProducts = updatedProducts.filter((product) => {
+    const selectedCategory = categories !== "All" ? categories : category;
+
+    if (selectedCategory && product.category.toLowerCase() !== selectedCategory.toLowerCase()) {
+        return false;
+    }
+
     if (highlight !== "All" && product.highlight !== highlight) return false;
 
     if (availability !== "All" && product.availability !== availability) return false;
 
     if (style !== "All" && product.style !== style) return false;
 
-    if (categories !== "All" && product.category !== categories) return false;
-
     return true;
-  });
+});
+
 
   if (priceRange === "High to Low") {
     filteredProducts.sort((a, b) => b.price - a.price);
@@ -46,21 +51,20 @@ const ProductList = () => {
     filteredProducts.sort((a, b) => a.price - b.price);
   }
 
-  return (
-    <Grid container spacing={2} sx={{ padding: "20px" }}>
-      {products.length === 0 ? (
-        <CircularProgress sx={{ margin: "auto" }} />
-      ) : filteredProducts.length > 0 ? (
-        filteredProducts.map((product) => (
-          <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
-            <ProductCard product={product} />
-          </Grid>
-        ))
-      ) : (
-        <p style={{ textAlign: "center", width: "100%" }}>No products found.</p>
-      )}
-    </Grid>
-  );
-};
-
+return (
+  <Grid container spacing={3} sx={{ padding: "20px" }}>
+    {products.length === 0 ? (
+      <CircularProgress sx={{ margin: "auto" }} />
+    ) : filteredProducts.length > 0 ? (
+      filteredProducts.map((product) => (
+        <Grid item key={product.id} xs={12} sm={6} md={4}>
+          <ProductCard product={product} />
+        </Grid>
+      ))
+    ) : (
+      <p style={{ textAlign: "center", width: "100%" }}>No products found.</p>
+    )}
+  </Grid>
+);
+}
 export default ProductList;

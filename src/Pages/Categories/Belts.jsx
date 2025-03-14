@@ -1,11 +1,10 @@
-import React from 'react'
+import Filter from "../../Pages/Categories/CategoryFilter";
+import Bar from "../../Components/Additional/Bar";
 
-function Belts() {
-  return (
-    <div>
-      i am a belt
-    </div>
-  )
+<div>
+  <Bar greyText='Belts' bgColor="#F5F5F5" breadCrumbs={false} />
+</div>
+
+export default function Belts() {
+    return <Filter category="Belts" />;
 }
-
-export default Belts

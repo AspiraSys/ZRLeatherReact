@@ -89,7 +89,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink
-                    to="/categories/footwear"
+                    to="../categories/footwear"
                     className="navlist_items"
                     onClick={hideDropdown}
                   >
