@@ -47,7 +47,7 @@ function Navbar() {
               <IoClose size={30} className="close_icon" />
             ) : (
               <FaBarsStaggered size={24} className="logo-icon"/>
-            )}{" "}
+            )}
           </button>
           <div className="logo">
             <img
@@ -75,7 +75,7 @@ function Navbar() {
                 onClick={() => setIsDropdownopen(!isDropdownopen)}
                 ref={dropdownRef}
               >
-                Categories{" "}
+                Categories
                 <RxCaretDown
                   size={24}
                   strokeWidth={1}
@@ -106,8 +106,7 @@ function Navbar() {
                   </NavLink>
                 </li>
                 <li>
-                  {" "}
-                  <NavLink
+                   <NavLink
                     to="/categories/belts"
                     className="navlist_items"
                     onClick={hideDropdown}

@@ -225,7 +225,7 @@ function ImageGrid() {
         }}
       >
         {Object.values(images)
-          .slice(1)
+          .slice(6,11)
           .map((image, index,array) => (
             <Box
               key={index}
