@@ -1,15 +1,13 @@
-import React, { Suspense } from "react";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../Components/Additional/Layout";
 import Home from "../Pages/Home";
 import AboutUs from "../Pages/AboutUs";
-// const AboutUs = React.lazy(() => import("../Pages/AboutUs"));
 import Contact from "../Pages/Contact";
 import Filter from "../Pages/Categories/Footwear";
 import Wallets from "../Pages/Categories/Wallets";
 import Belts from "../Pages/Categories/Belts";
 import Bags from "../Pages/Categories/Bags";
+import ProductDescription from "../Components/Additional/ProductDescription";
 
 function AppRoutes() {
   return (
@@ -24,7 +22,9 @@ function AppRoutes() {
           <Route path="/categories/belts" element={<Belts />} />
           <Route path="/categories/wallets" element={<Wallets />} />
           <Route path="/categories/others" element={<Filter />} />
-        </Route>
+          {/* <Route path="/product/:id" element={<ProductDescription />} /> */}
+          <Route path='/ProductDescription' element={<ProductDescription/>}/>
+          </Route>
       </Routes>
     </BrowserRouter>
   );

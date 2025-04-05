@@ -4,9 +4,11 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import SearchIcon from "@mui/icons-material/Search";
 import ShareIcon from "@mui/icons-material/Share";
 import CustomButton from "../../Components/Additional/GlobalButton";
+import { useNavigate } from "react-router-dom"; 
 
 const ProductCard = ({ product }) => {
   const [showIcons, setShowIcons] = useState(false);
+  const navigate = useNavigate(); 
 
   return (
     <Card
@@ -29,7 +31,11 @@ const ProductCard = ({ product }) => {
             width: 32,
             height: 32,
             boxShadow: 2,
+          '&:hover':{
+            backgroundColor:'white'
+          }
           }}
+          disableRipple
         >
           <FavoriteBorderIcon sx={{ color: "#000", fontSize: 20 }} />
         </IconButton>
@@ -118,6 +124,8 @@ const ProductCard = ({ product }) => {
             hoverStyles={{ backgroundColor: "#987760", color: "white" }}
             swipeHover={true}
             removeBorder={true}
+           to='/ProductDescription'
+
           />
           <CustomButton
             text="Add to cart"

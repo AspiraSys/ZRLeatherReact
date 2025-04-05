@@ -1,0 +1,166 @@
+{
+    "id": 1,
+    "name": "Leather Boots with heel for Women",
+    "price": 1450,
+    "originalPrice": 2050,
+    "image": "footwear1",
+    "thumbnailImages": [
+        "footwear2",
+        "footwear3",
+        "footwear4",
+        "footwear5",
+        "footwear6"
+    ],
+    "description": "Stylish and durable, these women's leather boots offer the perfect blend of comfort and elegance. Crafted from high-quality leather.",
+    "detailedDescription": {
+        "material": [
+            "Crafted from 100% genuine leather for a luxurious and durable finish.",
+            "Soft, supple texture with a natural sheen that enhances with age."
+        ],
+        "design": [
+            "Classic lace-up design for a secure and adjustable fit.",
+            "Sleek silhouette with minimal stitching for a versatile, modern look.",
+            "Available in multiple colors, such as black, brown, and tan, to suit various preferences."
+        ],
+        "comfort": [
+            "Padded insole for all-day cushioning and support.",
+            "Breathable lining to keep your feet fresh and dry.",
+            "Ergonomic arch support for added comfort during long hours of wear."
+        ],
+        "sole": [
+            "Durable rubber outsole with anti-slip treads for excellent grip on various terrains.",
+            "Lightweight yet sturdy construction for seamless mobility."
+        ],
+        "durability": [
+            "Reinforced seams and double-stitch construction to withstand daily wear and tear.",
+            "Water-resistant treatment to protect against light rain and splashes."
+        ],
+        "versatility": [
+            "Suitable for both casual and semi-formal occasions.",
+            "Complements a wide range of outfits, from jeans and a t-shirt to chinos and a blazer."
+        ]
+    },
+    "sizeOptions": ["3", "4", "5", "6", "7"],
+    "ratings": {
+        "averageRating": 3.8,
+        "totalRatings": 520,
+        "totalReviews": 247,
+        "starDistribution": {
+            "5": 200,
+            "4": 150,
+            "3": 80,
+            "2": 50,
+            "1": 40
+        }
+    },
+    "reviews": [
+        {
+            "name": "John D.",
+            "date": "12 May 2024",
+            "rating": 4,
+            "comment": "Absolutely love these boots! The leather feels premium, and they’ve been comfortable since day one. Perfect for both work and casual wear."
+        },
+        {
+            "name": "Emma R.",
+            "date": "11 July 2024",
+            "rating": 4,
+            "comment": "I was looking for something durable yet stylish, and these boots delivered! The fit is true to size, and I’ve already received so many compliments."
+        },
+        {
+            "name": "Michael K.",
+            "date": "20 July 2024",
+            "rating": 3,
+            "comment": "Great quality boots! They took a few days to break in, but now they’re super comfortable. The sole provides excellent grip. Happy to buy this product."
+        },
+        {
+            "name": "Sophia L.",
+            "date": "12 May 2024",
+            "rating": 5,
+            "comment": "I’ve had these boots for three months, and they’re holding up perfectly. The leather gets even better with time, and they go with almost every outfit."
+        },
+        {
+            "name": "Olivia T.",
+            "date": "24 July 2024",
+            "rating": 5,
+            "comment": "These boots are worth every penny! They’re stylish, durable, and comfortable enough for long walks. Highly recommend!"
+        },
+        {
+            "name": "Ethan W.",
+            "date": "24 August 2024",
+            "rating": 5,
+            "comment": "I wear these boots every day, and they’re still in excellent condition. The water-resistant finish is a lifesaver during rainy days."
+        },
+        {
+            "name": "Liam S.C.",
+            "date": "25 August 2024",
+            "rating": 5,
+            "comment": "The boots are fantastic! They are comfortable, durable, and the leather quality is superb. I’ve been wearing them for months, and they still look new."
+        },
+        {
+            "name": "Isabella M.",
+            "date": "27 August 2024",
+            "rating": 5,
+            "comment": "These boots exceeded my expectations. They’re stylish, easy to clean, and perfect for both office wear and weekend outings."
+        },
+        {
+            "name": "Noah J.",
+            "date": "29 August 2024",
+            "rating": 4,
+            "comment": "I love the rugged yet sleek design. They’re comfortable for daily wear, but the sizing runs slightly larger than expected."
+        },
+        {
+            "name": "Charlotte K.",
+            "date": "29 August 2024",
+            "rating": 4,
+            "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
+        },
+        {
+            "name": "Lucas B.",
+            "date": "30 August 2024",
+            "rating": 4,
+            "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
+        }
+    ],
+    "faq": [
+        {
+            "question": "What materials are these boots made from?",
+            "answer": "Our leather boots are crafted from 100% genuine leather with durable rubber soles."
+        },
+        {
+            "question": "Are these boots waterproof?",
+            "answer": "They are water-resistant but not fully waterproof."
+        },
+        {
+            "question": "Do they fit true to size?",
+            "answer": "Yes, but refer to the size chart for accuracy."
+        },
+        {
+            "question": "How do I clean the boots?",
+            "answer": "Use a damp cloth and apply leather conditioner regularly."
+        },
+        {
+            "question": "Can they be resoled?",
+            "answer": "Yes, the soles can be replaced by a cobbler."
+        },
+        {
+            "question": "Are the soles slip-resistant?",
+            "answer": "Yes, the rubber soles provide excellent grip."
+        },
+        {
+            "question": "Do the boots have arch support?",
+            "answer": "Yes, they are designed with ergonomic arch support."
+        },
+        {
+            "question": "How long does the leather last?",
+            "answer": "With proper care, the leather can last for years."
+        },
+        {
+            "question": "Are these boots unisex?",
+            "answer": "Yes, they are designed for both men and women."
+        },
+        {
+            "question": "Is there a warranty?",
+            "answer": "Yes, a 6-month warranty for manufacturing defects is included."
+        }
+    ]
+}
