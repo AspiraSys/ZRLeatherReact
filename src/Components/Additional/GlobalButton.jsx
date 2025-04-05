@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
 
 function CustomButton({
   text,
@@ -10,7 +10,13 @@ function CustomButton({
   hoverStyles = {},
   swipeHover = false,
   removeBorder=false,
+  to
 }) {
+  const navigate=useNavigate()
+  
+  const handleClick=()=>{
+    if(to) navigate(to)
+  }
   return (
     <Button
       variant="outlined"
@@ -60,8 +66,9 @@ function CustomButton({
               },
             }),
       }}
+      onClick={handleClick}
     >
-      {text}
+      {text} 
     </Button>
   );
 }
