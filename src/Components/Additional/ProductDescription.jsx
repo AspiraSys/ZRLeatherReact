@@ -127,8 +127,8 @@ const ProductDescription = () => {
             </Box>
           </Box>
           <Box display="flex" gap={2} mt={4} flexWrap="wrap">
-            <CustomButton text="Buy Now" borderColor="#987760" fontColor="#987760" fontSize="4px" padding={3.5} hoverStyles={{ backgroundColor: "#987760", color: "white" }} swipeHover={true} removeBorder={true} to='/ProductDescription' />
-            <CustomButton text="Add to Cart" borderColor="#987760" fontColor="#987760" fontSize="4px" hoverStyles={{ backgroundColor: "#987760", color: "white" }} swipeHover={true} removeBorder={true} startIcon={<ShoppingCartIcon />} />
+            <CustomButton text="Buy Now" borderColor="#987760" fontColor="#987760" fontSize="4px" padding={3.5} hoverStyles={{ backgroundColor: "#987760", color: "white" }} swipeHover={true} removeBorder={true}  to='/ShippingDetails'/>
+            <CustomButton text="Add to Cart" borderColor="#987760" fontColor="#987760" fontSize="4px" hoverStyles={{ backgroundColor: "#987760", color: "white" }} swipeHover={true} removeBorder={true} startIcon={<ShoppingCartIcon />} to='/cart'/>
           </Box>
         </Box>
       </Box>

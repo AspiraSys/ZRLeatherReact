@@ -8,6 +8,9 @@ import Wallets from "../Pages/Categories/Wallets";
 import Belts from "../Pages/Categories/Belts";
 import Bags from "../Pages/Categories/Bags";
 import ProductDescription from "../Components/Additional/ProductDescription";
+import ShippingDetails from "../Components/Additional/ShippingDetails";
+import ShippingDetails2 from "../Components/Additional/ShippingDetails2";
+import Cart from "../Components/Additional/Cart";
 
 function AppRoutes() {
   return (
@@ -22,9 +25,11 @@ function AppRoutes() {
           <Route path="/categories/belts" element={<Belts />} />
           <Route path="/categories/wallets" element={<Wallets />} />
           <Route path="/categories/others" element={<Filter />} />
-          {/* <Route path="/product/:id" element={<ProductDescription />} /> */}
-          <Route path='/ProductDescription' element={<ProductDescription/>}/>
-          </Route>
+          <Route path="/ProductDescription" element={<ProductDescription />} />
+          <Route path="/ShippingDetails" element={<ShippingDetails />} />
+          <Route path="/ShippingDetails2" element={<ShippingDetails2 />} />
+          <Route path="/cart" element={<Cart />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

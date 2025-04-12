@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import CustomButton from "../Components/Additional/GlobalButton";
+
 function Home() {
   const navigate = useNavigate(); 
 
@@ -30,6 +31,7 @@ function Home() {
         swipeHover={true}
         removeBorder={true}
       />
+
     </div>
   );
 }

@@ -119,7 +119,6 @@ const ProductCard = ({ product }) => {
             text="Buy Now"
             borderColor="#987760"
             fontColor="#987760"
-            fontSize="11px"
             padding={3.5}
             hoverStyles={{ backgroundColor: "#987760", color: "white" }}
             swipeHover={true}
@@ -131,10 +130,10 @@ const ProductCard = ({ product }) => {
             text="Add to cart"
             borderColor="#987760"
             fontColor="#987760"
-            fontSize="11px"
             hoverStyles={{ backgroundColor: "#987760", color: "white" }}
             swipeHover={true}
             removeBorder={true}
+            to='/cart'
           />
         </Box>
       </CardContent>

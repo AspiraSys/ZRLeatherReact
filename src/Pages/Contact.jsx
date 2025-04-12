@@ -40,7 +40,7 @@ const formFields = [
     type: "text",
     placeholder: "Type here...",
     multiline: true,
-    rows: 4,
+    rows: 3,
   },
 ];
 
@@ -86,8 +86,12 @@ export default function Contact() {
       <Container sx={{ my: 4 }}>
         <Grid
           container
-          spacing={{lg:0,md:4,sm:0,xs:0}}
-          sx={{ px: { sm: 0,md:0 }, rowGap: { lg: 6, md: 6, sm: 3, xs: 3 } ,justifyContent:'center'}}
+          spacing={{ lg: 0, md: 4, sm: 0, xs: 0 }}
+          sx={{
+            px: { sm: 0, md: 0 },
+            rowGap: { lg: 6, md: 6, sm: 3, xs: 3 },
+            justifyContent: "center",
+          }}
         >
           {/* Left Section - Contact Info */}
           <Grid
@@ -104,8 +108,8 @@ export default function Contact() {
             >
               <Grid
                 container
-             rowSpacing={{lg:3,sm:2,xs:2}}
-             columnSpacing={2}
+                rowSpacing={{ lg: 3, sm: 2, xs: 2 }}
+                columnSpacing={2}
               >
                 {iconCardData.map((card, index) => (
                   <Grid key={index} size={{ xs: 6 }}>
@@ -174,10 +178,11 @@ export default function Contact() {
             size={{ lg: 6, md: 6, xs: 12 }}
             sx={{ order: { sm: 1, lg: 2, md: 2, xs: 1 } }}
           >
-            <DynamicForm fields={formFields} />
+            <DynamicForm fields={formFields} buttonText="Submit" heading={true}/>
           </Grid>
         </Grid>
       </Container>
+
       <Box
         sx={{
           display: "flex",
@@ -196,7 +201,12 @@ export default function Contact() {
         </Typography>
       </Box>
       <SocialMediaIcons />
-      <Box sx={{ backgroundColor: "#765D4B" }} my={{lg:8,md:8,sm:4,xs:4}} px={{lg:5,md:3,sm:1,xs:1}} py={{lg:5,md:5,sm:3,xs:2}}>
+      <Box
+        sx={{ backgroundColor: "#765D4B" }}
+        my={{ lg: 8, md: 8, sm: 4, xs: 4 }}
+        px={{ lg: 5, md: 3, sm: 1, xs: 1 }}
+        py={{ lg: 5, md: 5, sm: 3, xs: 2 }}
+      >
         <ImageGrid />
       </Box>
     </>
@@ -207,34 +217,48 @@ function ImageGrid() {
   return (
     <Container sx={{ textAlign: "center" }}>
       <Box>
-        <Typography color="white" fontWeight='600' sx={{ fontSize: { xs: "23px", sm: "23px", md: "28px", lg: "28px" }}}>
+        <Typography
+          color="white"
+          fontWeight="600"
+          sx={{ fontSize: { xs: "23px", sm: "23px", md: "28px", lg: "28px" } }}
+        >
           Your Style, Our Challenge
         </Typography>
-        <Typography variant="body1" color="white" pt={2} fontSize={18} sx={{width:{lg:'60%'},margin:'auto'}}>
+        <Typography
+          variant="body1"
+          color="white"
+          pt={2}
+          fontSize={18}
+          sx={{ width: { lg: "60%" }, margin: "auto" }}
+        >
           We love challenges—big or small! Explore timeless leather designs
           crafted to match your unique needs.
         </Typography>
       </Box>
-      <Box className='gridImageContainer'
+      <Box
+        className="gridImageContainer"
         sx={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: {lg:0.5,sm:1.2,xs:1.2,md:0.5},
-          pt: {lg:7,md:4,sm:2,xs:2},
+          gap: { lg: 0.5, sm: 1.2, xs: 1.2, md: 0.5 },
+          pt: { lg: 7, md: 4, sm: 2, xs: 2 },
         }}
       >
         {Object.values(images)
-          .slice(6,11)
-          .map((image, index,array) => (
+          .slice(6, 11)
+          .map((image, index, array) => (
             <Box
               key={index}
               sx={{
                 width: { lg: "16.66%", md: "19%", sm: "20%", xs: "48%" },
-                height:{lg:'191px',md:'160px',sm:'150px',xs:'150px'},
+                height: { lg: "191px", md: "160px", sm: "150px", xs: "150px" },
                 overflow: "hidden",
                 display: {
-                  sm: index === array.length - 1 ? "none" : "block",   xs: index === array.length - 1 ? "none" : "block" ,lg:'block',md:'block'
+                  sm: index === array.length - 1 ? "none" : "block",
+                  xs: index === array.length - 1 ? "none" : "block",
+                  lg: "block",
+                  md: "block",
                 },
                 transition: "width 0.4s ease-in-out",
                 "&:hover": {
@@ -257,4 +281,3 @@ function ImageGrid() {
     </Container>
   );
 }
-
