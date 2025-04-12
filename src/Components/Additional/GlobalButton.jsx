@@ -33,7 +33,6 @@ function CustomButton({
         backgroundColor: "transparent",
         zIndex: 0,
         removeBorder: false,
-        fontSize:fontSize,
         transition: "color 0.3s ease-in-out, background-color 0.3s ease-in-out",
 
         ...(swipeHover

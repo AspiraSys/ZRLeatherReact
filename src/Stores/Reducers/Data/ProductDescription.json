@@ -1,8 +1,8 @@
 {
     "id": 1,
     "name": "Leather Boots with heel for Women",
-    "price": 1450,
-    "originalPrice": 2050,
+    "price": 850,
+    "originalPrice": 1350,
     "image": "footwear1",
     "thumbnailImages": [
         "footwear2",
@@ -163,4 +163,6 @@
             "answer": "Yes, a 6-month warranty for manufacturing defects is included."
         }
     ]
+
+    
 }

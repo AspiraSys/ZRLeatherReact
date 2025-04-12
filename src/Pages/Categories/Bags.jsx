@@ -47,15 +47,15 @@ export default function Bags() {
                             <Typography
                                 variant="h4"
                                 sx={{
-                                    fontWeight: "bold",
+                                    fontWeight: "600",
                                     color: "black",
                                     fontSize:"45px",
                                 }}
                             >
-                                Luxury Leather Bags Now Up to <span style={{ color: "#A78870" }}>50% OFF!</span>
+                                Luxury Leather Bags Now Up to <span style={{ color: "#A78870" }}>50%</span> OFF!
                             </Typography>
 
-                            <Typography sx={{ marginTop: "10px", color: "black",fontSize:"25px", }}>
+                            <Typography sx={{ marginTop: "10px", color: "black",fontSize:"22px", marginRight: "50px",}}>
                                 Upgrade your style with our exclusive leather bags! Enjoy up to 30% to 50% OFF – shop now and save big!
                             </Typography>
 

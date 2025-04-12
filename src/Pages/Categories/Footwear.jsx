@@ -7,7 +7,7 @@ export default function Footwear() {
         <>
             <Bar greyText='Footwear' bgColor="#F5F5F5" breadCrumbs={false} />
 
-            <Filter category="Footwear" />;
+            <Filter category="Footwear" />
         </>
     )
 }
