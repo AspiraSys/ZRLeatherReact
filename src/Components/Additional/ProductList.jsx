@@ -4,9 +4,9 @@ import { Grid, CircularProgress } from "@mui/material";
 import ProductCard from "../../Components/Additional/ProductCard";
 import { setProducts } from "../../Stores/Reducers/productSlice";
 import images from "../../Utils/Images";
-import productData from "../../Stores/Reducers/Data/products.json";
+import productData from "../../Stores/Reducers/Data/Products.json";
 
-const ProductList = ({ category }) => {  // <-- Category prop add kiya
+const ProductList = ({ category }) => {  
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
 
