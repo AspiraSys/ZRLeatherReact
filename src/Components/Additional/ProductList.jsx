@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Grid, CircularProgress } from "@mui/material";
+import { Grid, CircularProgress, Box, Container, useTheme, useMediaQuery } from "@mui/material";
 import ProductCard from "../../Components/Additional/ProductCard";
 import { setProducts } from "../../Stores/Reducers/productSlice";
 import images from "../../Utils/Images";
@@ -9,6 +9,11 @@ import productData from "../../Stores/Reducers/Data/Products.json";
 const ProductList = ({ category }) => {  
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
+  const theme = useTheme();
+  
+  // Custom breakpoints for more precise control
+  const isExtraSmall = useMediaQuery('(max-width:500px)');
+  const isSmall = useMediaQuery('(min-width:501px) and (max-width:899px)');
 
   const {
     highlight,
@@ -42,8 +47,7 @@ const ProductList = ({ category }) => {
     if (style !== "All" && product.style !== style) return false;
 
     return true;
-});
-
+  });
 
   if (priceRange === "High to Low") {
     filteredProducts.sort((a, b) => b.price - a.price);
@@ -51,20 +55,60 @@ const ProductList = ({ category }) => {
     filteredProducts.sort((a, b) => a.price - b.price);
   }
 
-return (
-  <Grid container spacing={3} sx={{ padding: "20px" }}>
-    {products.length === 0 ? (
-      <CircularProgress sx={{ margin: "auto" }} />
-    ) : filteredProducts.length > 0 ? (
-      filteredProducts.map((product) => (
-        <Grid item key={product.id} xs={12} sm={6} md={4}>
-          <ProductCard product={product} />
+  // Calculate grid size based on screen width
+  const getGridSize = () => {
+    if (isExtraSmall) return 12; // 1 card per row on extra small screens
+    if (isSmall) return 6;       // 2 cards per row on small screens
+    return 4;                    // 3 cards per row on medium and larger screens
+  };
+
+  return (
+    <Container maxWidth="xl" sx={{ py: 3 }}>
+      {products.length === 0 ? (
+        <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', py: 8 }}>
+          <CircularProgress />
+        </Box>
+      ) : filteredProducts.length > 0 ? (
+        <Grid 
+          container 
+          spacing={{ xs: 2, sm: 2, md: 3 }}
+          sx={{ 
+            display: 'flex',
+            justifyContent: { xs: 'center', sm: 'flex-start' }
+          }}
+        >
+          {filteredProducts.map((product) => (
+            <Grid 
+              item 
+              key={product.id} 
+              xs={getGridSize()}
+              sx={{
+                display: 'flex',
+                justifyContent: 'center'
+              }}
+            >
+              <Box 
+                sx={{ 
+                  width: '100%', 
+                  maxWidth: { 
+                    xs: '100%', 
+                    sm: '280px', 
+                    md: '300px' 
+                  }
+                }}
+              >
+                <ProductCard product={product} />
+              </Box>
+            </Grid>
+          ))}
         </Grid>
-      ))
-    ) : (
-      <p style={{ textAlign: "center", width: "100%" }}>No products found.</p>
-    )}
-  </Grid>
-);
+      ) : (
+        <Box sx={{ textAlign: "center", width: "100%", py: 6 }}>
+          No products found.
+        </Box>
+      )}
+    </Container>
+  );
 }
+
 export default ProductList;

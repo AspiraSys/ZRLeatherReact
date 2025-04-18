@@ -25,7 +25,7 @@ function AppRoutes() {
           <Route path="/categories/belts" element={<Belts />} />
           <Route path="/categories/wallets" element={<Wallets />} />
           <Route path="/categories/others" element={<Filter />} />
-          <Route path="/ProductDescription" element={<ProductDescription />} />
+          <Route path="/product/:id" element={<ProductDescription />} />
           <Route path="/ShippingDetails" element={<ShippingDetails />} />
           <Route path="/ShippingDetails2" element={<ShippingDetails2 />} />
           <Route path="/cart" element={<Cart />} />

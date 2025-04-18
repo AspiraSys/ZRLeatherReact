@@ -1,168 +1,1926 @@
 {
-    "id": 1,
-    "name": "Leather Boots with heel for Women",
-    "price": 850,
-    "originalPrice": 1350,
-    "image": "footwear1",
-    "thumbnailImages": [
+  "commonData": {
+    "reviews": [
+      {
+        "name": "John D.",
+        "date": "12 May 2024",
+        "rating": 4,
+        "comment": "Absolutely love these boots! The leather feels premium, and they've been comfortable since day one. Perfect for both work and casual wear."
+      },
+      {
+        "name": "Emma R.",
+        "date": "11 July 2024",
+        "rating": 4,
+        "comment": "I was looking for something durable yet stylish, and these boots delivered! The fit is true to size, and I've already received so many compliments."
+      },
+      {
+        "name": "Michael K.",
+        "date": "20 July 2024",
+        "rating": 3,
+        "comment": "Great quality boots! They took a few days to break in, but now they're super comfortable. The sole provides excellent grip. Happy to buy this product."
+      },
+      {
+        "name": "Sophia L.",
+        "date": "12 May 2024",
+        "rating": 5,
+        "comment": "I've had these boots for three months, and they're holding up perfectly. The leather gets even better with time, and they go with almost every outfit."
+      },
+      {
+        "name": "Olivia T.",
+        "date": "24 July 2024",
+        "rating": 5,
+        "comment": "These boots are worth every penny! They're stylish, durable, and comfortable enough for long walks. Highly recommend!"
+      },
+      {
+        "name": "Ethan W.",
+        "date": "24 August 2024",
+        "rating": 5,
+        "comment": "I wear these boots every day, and they're still in excellent condition. The water-resistant finish is a lifesaver during rainy days."
+      },
+      {
+        "name": "Liam S.C.",
+        "date": "25 August 2024",
+        "rating": 5,
+        "comment": "The boots are fantastic! They are comfortable, durable, and the leather quality is superb. I've been wearing them for months, and they still look new."
+      },
+      {
+        "name": "Isabella M.",
+        "date": "27 August 2024",
+        "rating": 5,
+        "comment": "These boots exceeded my expectations. They're stylish, easy to clean, and perfect for both office wear and weekend outings."
+      },
+      {
+        "name": "Noah J.",
+        "date": "29 August 2024",
+        "rating": 4,
+        "comment": "I love the rugged yet sleek design. They're comfortable for daily wear, but the sizing runs slightly larger than expected."
+      },
+      {
+        "name": "Charlotte K.",
+        "date": "29 August 2024",
+        "rating": 4,
+        "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
+      },
+      {
+        "name": "Lucas B.",
+        "date": "30 August 2024",
+        "rating": 4,
+        "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
+      }
+    ],
+    "faq": [
+      {
+        "question": "What materials are these boots made from?",
+        "answer": "Our leather boots are crafted from 100% genuine leather with durable rubber soles."
+      },
+      {
+        "question": "Are these boots waterproof?",
+        "answer": "They are water-resistant but not fully waterproof."
+      },
+      {
+        "question": "Do they fit true to size?",
+        "answer": "Yes, but refer to the size chart for accuracy."
+      },
+      {
+        "question": "How do I clean the boots?",
+        "answer": "Use a damp cloth and apply leather conditioner regularly."
+      },
+      {
+        "question": "Can they be resoled?",
+        "answer": "Yes, the soles can be replaced by a cobbler."
+      },
+      {
+        "question": "Are the soles slip-resistant?",
+        "answer": "Yes, the rubber soles provide excellent grip."
+      },
+      {
+        "question": "Do the boots have arch support?",
+        "answer": "Yes, they are designed with ergonomic arch support."
+      },
+      {
+        "question": "How long does the leather last?",
+        "answer": "With proper care, the leather can last for years."
+      },
+      {
+        "question": "Are these boots unisex?",
+        "answer": "Yes, they are designed for both men and women."
+      },
+      {
+        "question": "Is there a warranty?",
+        "answer": "Yes, a 6-month warranty for manufacturing defects is included."
+      }
+    ],
+    "detailedDescription": {
+      "material": [
+        "Crafted from 100% genuine leather for a luxurious and durable finish.",
+        "Soft, supple texture with a natural sheen that enhances with age."
+      ],
+      "design": [
+        "Classic lace-up design for a secure and adjustable fit.",
+        "Sleek silhouette with minimal stitching for a versatile, modern look.",
+        "Available in multiple colors, such as black, brown, and tan, to suit various preferences."
+      ],
+      "comfort": [
+        "Padded insole for all-day cushioning and support.",
+        "Breathable lining to keep your feet fresh and dry.",
+        "Ergonomic arch support for added comfort during long hours of wear."
+      ],
+      "sole": [
+        "Durable rubber outsole with anti-slip treads for excellent grip on various terrains.",
+        "Lightweight yet sturdy construction for seamless mobility."
+      ],
+      "durability": [
+        "Reinforced seams and double-stitch construction to withstand daily wear and tear.",
+        "Water-resistant treatment to protect against light rain and splashes."
+      ],
+      "versatility": [
+        "Suitable for both casual and semi-formal occasions.",
+        "Complements a wide range of outfits, from jeans and a t-shirt to chinos and a blazer."
+      ]
+    }
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "Leather Boots with heel for Women",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "footwear1",
+      "highlight": "Best Sellers",
+      "rating": 4.5,
+      "thumbnailImages": [
         "footwear2",
         "footwear3",
         "footwear4",
         "footwear5",
         "footwear6"
-    ],
-    "description": "Stylish and durable, these women's leather boots offer the perfect blend of comfort and elegance. Crafted from high-quality leather.",
-    "detailedDescription": {
-        "material": [
-            "Crafted from 100% genuine leather for a luxurious and durable finish.",
-            "Soft, supple texture with a natural sheen that enhances with age."
-        ],
-        "design": [
-            "Classic lace-up design for a secure and adjustable fit.",
-            "Sleek silhouette with minimal stitching for a versatile, modern look.",
-            "Available in multiple colors, such as black, brown, and tan, to suit various preferences."
-        ],
-        "comfort": [
-            "Padded insole for all-day cushioning and support.",
-            "Breathable lining to keep your feet fresh and dry.",
-            "Ergonomic arch support for added comfort during long hours of wear."
-        ],
-        "sole": [
-            "Durable rubber outsole with anti-slip treads for excellent grip on various terrains.",
-            "Lightweight yet sturdy construction for seamless mobility."
-        ],
-        "durability": [
-            "Reinforced seams and double-stitch construction to withstand daily wear and tear.",
-            "Water-resistant treatment to protect against light rain and splashes."
-        ],
-        "versatility": [
-            "Suitable for both casual and semi-formal occasions.",
-            "Complements a wide range of outfits, from jeans and a t-shirt to chinos and a blazer."
-        ]
-    },
-    "sizeOptions": ["3", "4", "5", "6", "7"],
-    "ratings": {
+      ],
+      "description": "Stylish and durable, these women's leather boots offer the perfect blend of comfort and elegance. Crafted from high-quality leather.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
         "averageRating": 3.8,
         "totalRatings": 520,
         "totalReviews": 247,
         "starDistribution": {
-            "5": 200,
-            "4": 150,
-            "3": 80,
-            "2": 50,
-            "1": 40
+          "5": 200,
+          "4": 150,
+          "3": 80,
+          "2": 50,
+          "1": 40
         }
+      },
+      "commonDataReference": "commonData"
     },
-    "reviews": [
-        {
-            "name": "John D.",
-            "date": "12 May 2024",
-            "rating": 4,
-            "comment": "Absolutely love these boots! The leather feels premium, and they’ve been comfortable since day one. Perfect for both work and casual wear."
-        },
-        {
-            "name": "Emma R.",
-            "date": "11 July 2024",
-            "rating": 4,
-            "comment": "I was looking for something durable yet stylish, and these boots delivered! The fit is true to size, and I’ve already received so many compliments."
-        },
-        {
-            "name": "Michael K.",
-            "date": "20 July 2024",
-            "rating": 3,
-            "comment": "Great quality boots! They took a few days to break in, but now they’re super comfortable. The sole provides excellent grip. Happy to buy this product."
-        },
-        {
-            "name": "Sophia L.",
-            "date": "12 May 2024",
-            "rating": 5,
-            "comment": "I’ve had these boots for three months, and they’re holding up perfectly. The leather gets even better with time, and they go with almost every outfit."
-        },
-        {
-            "name": "Olivia T.",
-            "date": "24 July 2024",
-            "rating": 5,
-            "comment": "These boots are worth every penny! They’re stylish, durable, and comfortable enough for long walks. Highly recommend!"
-        },
-        {
-            "name": "Ethan W.",
-            "date": "24 August 2024",
-            "rating": 5,
-            "comment": "I wear these boots every day, and they’re still in excellent condition. The water-resistant finish is a lifesaver during rainy days."
-        },
-        {
-            "name": "Liam S.C.",
-            "date": "25 August 2024",
-            "rating": 5,
-            "comment": "The boots are fantastic! They are comfortable, durable, and the leather quality is superb. I’ve been wearing them for months, and they still look new."
-        },
-        {
-            "name": "Isabella M.",
-            "date": "27 August 2024",
-            "rating": 5,
-            "comment": "These boots exceeded my expectations. They’re stylish, easy to clean, and perfect for both office wear and weekend outings."
-        },
-        {
-            "name": "Noah J.",
-            "date": "29 August 2024",
-            "rating": 4,
-            "comment": "I love the rugged yet sleek design. They’re comfortable for daily wear, but the sizing runs slightly larger than expected."
-        },
-        {
-            "name": "Charlotte K.",
-            "date": "29 August 2024",
-            "rating": 4,
-            "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
-        },
-        {
-            "name": "Lucas B.",
-            "date": "30 August 2024",
-            "rating": 4,
-            "comment": "High-quality boots at a reasonable price. They took a little time to break in, but now they feel amazing. Definitely recommend them!"
+    {
+      "id": 2,
+      "name": "Leather Shoe for Women",
+      "price": 950,
+      "originalPrice": 1200,
+      "image": "footwear2",
+      "highlight": "New Arrival",
+      "rating": 4.0,
+      "thumbnailImages": [
+        "footwear2",
+        "footwear3",
+        "footwear4",
+        "footwear5",
+        "footwear6"
+      ],
+      "description": "Luxurious leather shoes crafted for women, blending elegance with comfort. Perfect for formal occasions or daily style with a premium feel.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
+        "averageRating": 4.0,
+        "totalRatings": 280,
+        "totalReviews": 120,
+        "starDistribution": {
+          "5": 140,
+          "4": 80,
+          "3": 30,
+          "2": 20,
+          "1": 10
         }
-    ],
-    "faq": [
-        {
-            "question": "What materials are these boots made from?",
-            "answer": "Our leather boots are crafted from 100% genuine leather with durable rubber soles."
-        },
-        {
-            "question": "Are these boots waterproof?",
-            "answer": "They are water-resistant but not fully waterproof."
-        },
-        {
-            "question": "Do they fit true to size?",
-            "answer": "Yes, but refer to the size chart for accuracy."
-        },
-        {
-            "question": "How do I clean the boots?",
-            "answer": "Use a damp cloth and apply leather conditioner regularly."
-        },
-        {
-            "question": "Can they be resoled?",
-            "answer": "Yes, the soles can be replaced by a cobbler."
-        },
-        {
-            "question": "Are the soles slip-resistant?",
-            "answer": "Yes, the rubber soles provide excellent grip."
-        },
-        {
-            "question": "Do the boots have arch support?",
-            "answer": "Yes, they are designed with ergonomic arch support."
-        },
-        {
-            "question": "How long does the leather last?",
-            "answer": "With proper care, the leather can last for years."
-        },
-        {
-            "question": "Are these boots unisex?",
-            "answer": "Yes, they are designed for both men and women."
-        },
-        {
-            "question": "Is there a warranty?",
-            "answer": "Yes, a 6-month warranty for manufacturing defects is included."
+      },
+      "availability": "In Stock",
+      "style": "Luxury",
+      "category": "Footwear",
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 3,
+      "name": "Leather shoe for Women",
+      "price": 850,
+      "originalPrice": 1150,
+      "image": "footwear3",
+      "rating": 4.3,
+      "thumbnailImages": [
+        "footwear3",
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7"
+      ],
+      "description": "Elegant and comfortable, these women's leather shoes are crafted for everyday luxury and timeless style.",
+      "sizeOptions": [
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "ratings": {
+        "averageRating": 4.3,
+        "totalRatings": 210,
+        "totalReviews": 140,
+        "starDistribution": {
+          "5": 100,
+          "4": 60,
+          "3": 30,
+          "2": 10,
+          "1": 10
         }
-    ]
-
-    
+      },
+      "highlight": "Popular",
+      "availability": "In Stock",
+      "style": "Luxury",
+      "category": "Footwear",
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 4,
+      "name": "Leather shoe for Men",
+      "price": 950,
+      "originalPrice": 1350,
+      "image": "footwear4",
+      "highlight": "Best Sellers",
+      "rating": 4.6,
+      "thumbnailImages": [
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear8",
+        "footwear9"
+      ],
+      "description": "Stylish and durable, these men's leather shoes are perfect for formal occasions, offering a sophisticated look.",
+      "sizeOptions": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": {
+        "averageRating": 4.6,
+        "totalRatings": 320,
+        "totalReviews": 210,
+        "starDistribution": {
+          "5": 150,
+          "4": 120,
+          "3": 30,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 5,
+      "name": "Leather shoe for Women",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "footwear5",
+      "highlight": "Others",
+      "rating": 3.9,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear6",
+        "footwear7",
+        "footwear8",
+        "footwear9"
+      ],
+      "description": "Elegant and versatile leather shoes for women, designed to offer a luxurious feel with every step.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
+        "averageRating": 3.9,
+        "totalRatings": 210,
+        "totalReviews": 120,
+        "starDistribution": {
+          "5": 90,
+          "4": 80,
+          "3": 30,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 6,
+      "name": "Leather shoe for Women",
+      "price": 2850,
+      "originalPrice": 3500,
+      "image": "footwear6",
+      "highlight": "New Arrival",
+      "rating": 4.7,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear7",
+        "footwear8",
+        "footwear9"
+      ],
+      "description": "Premium leather shoes for women, designed to combine elegance with superior comfort and style.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
+        "averageRating": 4.7,
+        "totalRatings": 450,
+        "totalReviews": 320,
+        "starDistribution": {
+          "5": 200,
+          "4": 150,
+          "3": 50,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 7,
+      "name": "Leather shoe for Men",
+      "price": 2850,
+      "originalPrice": 3500,
+      "image": "footwear7",
+      "highlight": "Popular",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear8",
+        "footwear9"
+      ],
+      "description": "A perfect blend of formal and casual, these men's leather shoes are designed for both style and durability.",
+      "sizeOptions": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 500,
+        "totalReviews": 380,
+        "starDistribution": {
+          "5": 300,
+          "4": 150,
+          "3": 30,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 8,
+      "name": "Leather shoe for Women",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "footwear8",
+      "highlight": "Best Sellers",
+      "rating": 4.2,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear9"
+      ],
+      "description": "Chic and stylish women's leather shoes, perfect for both casual and semi-formal events.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
+        "averageRating": 4.2,
+        "totalRatings": 380,
+        "totalReviews": 210,
+        "starDistribution": {
+          "5": 180,
+          "4": 120,
+          "3": 50,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 9,
+      "name": "Leather shoe for Men",
+      "price": 2850,
+      "originalPrice": 3500,
+      "image": "footwear9",
+      "highlight": "New Arrival",
+      "rating": 4.3,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear8"
+      ],
+      "description": "Men's leather shoes designed for both casual wear and special events. Combining style and comfort seamlessly.",
+      "sizeOptions": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": {
+        "averageRating": 4.3,
+        "totalRatings": 430,
+        "totalReviews": 300,
+        "starDistribution": {
+          "5": 210,
+          "4": 150,
+          "3": 40,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 10,
+      "name": "Leather shoe for Women",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "footwear10",
+      "highlight": "Popular",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear8"
+      ],
+      "description": "Luxury leather shoes for women, designed for comfort and style, perfect for any occasion.",
+      "sizeOptions": [
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 540,
+        "totalReviews": 380,
+        "starDistribution": {
+          "5": 250,
+          "4": 180,
+          "3": 50,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 11,
+      "name": "Leather shoe for Men",
+      "price": 2850,
+      "originalPrice": 3500,
+      "image": "footwear11",
+      "highlight": "Others",
+      "rating": 3.8,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear8"
+      ],
+      "description": "Comfortable yet stylish men's leather shoes for casual wear, providing all-day comfort with every step.",
+      "sizeOptions": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": {
+        "averageRating": 3.8,
+        "totalRatings": 250,
+        "totalReviews": 150,
+        "starDistribution": {
+          "5": 90,
+          "4": 80,
+          "3": 40,
+          "2": 20,
+          "1": 20
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 12,
+      "name": "Leather shoe for Men",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "footwear12",
+      "highlight": "Popular",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "footwear4",
+        "footwear5",
+        "footwear6",
+        "footwear7",
+        "footwear8"
+      ],
+      "description": "A versatile and durable pair of men's leather shoes perfect for formal occasions.",
+      "sizeOptions": [
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 430,
+        "totalReviews": 300,
+        "starDistribution": {
+          "5": 220,
+          "4": 150,
+          "3": 40,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 13,
+      "name": "Corporate Voyager with leather style",
+      "price": 850,
+      "originalPrice": 1350,
+      "image": "bags1",
+      "highlight": "Best Sellers",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "bags2",
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6"
+      ],
+      "description": "This corporate leather bag combines style and practicality, designed for professionals on the go.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 300,
+        "totalReviews": 150,
+        "starDistribution": {
+          "5": 150,
+          "4": 100,
+          "3": 30,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 14,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags2",
+      "highlight": "New Arrival",
+      "rating": 4.0,
+      "thumbnailImages": [
+        "bags1",
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6"
+      ],
+      "description": "A luxury leather bag designed for professionals, offering both elegance and durability.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.0,
+        "totalRatings": 230,
+        "totalReviews": 120,
+        "starDistribution": {
+          "5": 100,
+          "4": 80,
+          "3": 30,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 15,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags3",
+      "highlight": "Popular",
+      "rating": 4.2,
+      "thumbnailImages": [
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags7",
+        "bags8"
+      ],
+      "description": "A luxury leather bag designed for casual use, combining style and comfort.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.2,
+        "totalRatings": 180,
+        "totalReviews": 90,
+        "starDistribution": {
+          "5": 90,
+          "4": 60,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 16,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags4",
+      "highlight": "Best Sellers",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "bags3",
+        "bags5",
+        "bags6",
+        "bags7",
+        "bags8"
+      ],
+      "description": "A luxury leather bag offering high-end style and practicality for professionals.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 230,
+        "totalReviews": 110,
+        "starDistribution": {
+          "5": 160,
+          "4": 50,
+          "3": 10,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 17,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags5",
+      "highlight": "Others",
+      "rating": 4.0,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags6",
+        "bags7",
+        "bags8"
+      ],
+      "description": "A reliable and stylish leather bag perfect for casual outings and daily use.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.0,
+        "totalRatings": 150,
+        "totalReviews": 70,
+        "starDistribution": {
+          "5": 75,
+          "4": 50,
+          "3": 15,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 18,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags6",
+      "highlight": "New Arrival",
+      "rating": 4.6,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags7",
+        "bags8"
+      ],
+      "description": "Elegant leather bag designed for professionals with a sleek and polished look.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.6,
+        "totalRatings": 200,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 120,
+          "4": 60,
+          "3": 10,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 19,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags7",
+      "highlight": "Best Sellers",
+      "rating": 5.0,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags8"
+      ],
+      "description": "A luxury leather bag with premium finish, perfect for upscale casual wear.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 5.0,
+        "totalRatings": 100,
+        "totalReviews": 50,
+        "starDistribution": {
+          "5": 100,
+          "4": 0,
+          "3": 0,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 20,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags8",
+      "highlight": "Popular",
+      "rating": 4.7,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags7"
+      ],
+      "description": "High-end leather bag combining functionality and style, perfect for formal settings.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.7,
+        "totalRatings": 180,
+        "totalReviews": 80,
+        "starDistribution": {
+          "5": 120,
+          "4": 50,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 21,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags9",
+      "highlight": "New Arrival",
+      "rating": 4.3,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags8"
+      ],
+      "description": "Stylish and functional leather bag, perfect for casual professionals.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.3,
+        "totalRatings": 160,
+        "totalReviews": 70,
+        "starDistribution": {
+          "5": 90,
+          "4": 50,
+          "3": 20,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 22,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags10",
+      "highlight": "Others",
+      "rating": 3.9,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags7"
+      ],
+      "description": "Elegant leather bag, perfect for both professional and casual use.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 3.9,
+        "totalRatings": 140,
+        "totalReviews": 60,
+        "starDistribution": {
+          "5": 70,
+          "4": 40,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 23,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags11",
+      "highlight": "Best Sellers",
+      "rating": 4.9,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags7"
+      ],
+      "description": "A luxury leather bag ideal for professionals seeking elegance.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.9,
+        "totalRatings": 120,
+        "totalReviews": 60,
+        "starDistribution": {
+          "5": 110,
+          "4": 10,
+          "3": 0,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 24,
+      "name": "The Prestige Carry leather bags",
+      "price": 1850,
+      "originalPrice": 2200,
+      "image": "bags12",
+      "highlight": "Popular",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "bags3",
+        "bags4",
+        "bags5",
+        "bags6",
+        "bags7"
+      ],
+      "description": "Premium leather bag perfect for formal and upscale casual use.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 150,
+        "totalReviews": 70,
+        "starDistribution": {
+          "5": 90,
+          "4": 50,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 25,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts1",
+      "highlight": "Best Sellers",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts6"
+      ],
+      "description": "Elegant leather belt for women, offering both style and durability.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 200,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 110,
+          "4": 60,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 26,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts2",
+      "highlight": "New Arrival",
+      "rating": 4.0,
+      "thumbnailImages": [
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts6",
+        "belts7"
+      ],
+      "description": "A stylish leather belt with a sleek strip design, perfect for any occasion.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.0,
+        "totalRatings": 120,
+        "totalReviews": 60,
+        "starDistribution": {
+          "5": 50,
+          "4": 40,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 27,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts3",
+      "highlight": "Top Rated",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "belts2",
+        "belts4",
+        "belts5",
+        "belts6",
+        "belts7"
+      ],
+      "description": "A top-rated leather belt with a stylish strip design, great for both casual and formal wear.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 180,
+        "totalReviews": 90,
+        "starDistribution": {
+          "5": 150,
+          "4": 30,
+          "3": 0,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 28,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts4",
+      "highlight": "Others",
+      "rating": 3.9,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts5",
+        "belts6",
+        "belts7"
+      ],
+      "description": "A high-quality leather belt with a unique strip design, perfect for a chic look.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 3.9,
+        "totalRatings": 100,
+        "totalReviews": 50,
+        "starDistribution": {
+          "5": 40,
+          "4": 30,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 29,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts5",
+      "highlight": "New Arrival",
+      "rating": 4.3,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts6",
+        "belts7"
+      ],
+      "description": "A new arrival, this belt features a stylish design that complements both formal and casual outfits.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.3,
+        "totalRatings": 130,
+        "totalReviews": 65,
+        "starDistribution": {
+          "5": 60,
+          "4": 40,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 30,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts6",
+      "highlight": "Popular",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "A popular leather belt with a sleek strip design that is perfect for everyday wear.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 200,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 120,
+          "4": 60,
+          "3": 15,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 31,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts7",
+      "highlight": "Others",
+      "rating": 3.8,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts8"
+      ],
+      "description": "A formal leather belt designed for men, featuring a sharp, sleek strip style.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 3.8,
+        "totalRatings": 110,
+        "totalReviews": 50,
+        "starDistribution": {
+          "5": 40,
+          "4": 30,
+          "3": 25,
+          "2": 10,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 32,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts8",
+      "highlight": "Best Sellers",
+      "rating": 4.7,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "Best-seller leather belt, a stylish addition to any wardrobe for both men and women.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.7,
+        "totalRatings": 180,
+        "totalReviews": 90,
+        "starDistribution": {
+          "5": 130,
+          "4": 40,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 33,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts9",
+      "highlight": "Popular",
+      "rating": 4.2,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "A popular leather belt designed for formal wear, offering elegance and sophistication.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.2,
+        "totalRatings": 160,
+        "totalReviews": 75,
+        "starDistribution": {
+          "5": 90,
+          "4": 50,
+          "3": 20,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 34,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts10",
+      "highlight": "New Arrival",
+      "rating": 4.6,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "New arrival leather belt designed for a chic and casual look with a premium strip design.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.6,
+        "totalRatings": 140,
+        "totalReviews": 65,
+        "starDistribution": {
+          "5": 100,
+          "4": 30,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 35,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts11",
+      "highlight": "Best Sellers",
+      "rating": 4.9,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "Best-selling leather belt perfect for men's formal attire, combining style and durability.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.9,
+        "totalRatings": 250,
+        "totalReviews": 120,
+        "starDistribution": {
+          "5": 200,
+          "4": 40,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 36,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts12",
+      "highlight": "Popular",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "belts2",
+        "belts3",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "A popular and elegant leather belt for men, featuring a sleek strip design for formal wear.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 180,
+        "totalReviews": 85,
+        "starDistribution": {
+          "5": 110,
+          "4": 50,
+          "3": 15,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 37,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts13",
+      "highlight": "Others",
+      "rating": 3.9,
+      "thumbnailImages": [
+        "belts14",
+        "belts15",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "A stylish leather belt with a strip design for men's casual wear.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 3.9,
+        "totalRatings": 150,
+        "totalReviews": 70,
+        "starDistribution": {
+          "5": 40,
+          "4": 50,
+          "3": 30,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 38,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts14",
+      "highlight": "New Arrival",
+      "rating": 4.4,
+      "thumbnailImages": [
+        "belts13",
+        "belts15",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "A new arrival leather belt with a sleek strip design for casual occasions.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.4,
+        "totalRatings": 180,
+        "totalReviews": 90,
+        "starDistribution": {
+          "5": 100,
+          "4": 60,
+          "3": 20,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 39,
+      "name": "Leather Belt with strip for Women",
+      "price": 550,
+      "originalPrice": 850,
+      "image": "belts15",
+      "highlight": "Top Rated",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "belts13",
+        "belts14",
+        "belts4",
+        "belts5",
+        "belts7"
+      ],
+      "description": "Top-rated leather belt designed for casual wear, featuring a durable strip design.",
+      "sizeOptions": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 220,
+        "totalReviews": 110,
+        "starDistribution": {
+          "5": 170,
+          "4": 40,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 40,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets1",
+      "highlight": "Top Rated",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "wallets2",
+        "wallets3",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A top-rated leather wallet with a smooth finish, designed for elegance and durability.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 300,
+        "totalReviews": 150,
+        "starDistribution": {
+          "5": 200,
+          "4": 80,
+          "3": 15,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 41,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets2",
+      "highlight": "Best Sellers",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets3",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A best-seller leather wallet with smooth finish, perfect for everyday use.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 250,
+        "totalReviews": 130,
+        "starDistribution": {
+          "5": 150,
+          "4": 75,
+          "3": 15,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 42,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets3",
+      "highlight": "New Arrival",
+      "rating": 4.7,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A new arrival leather wallet with a smooth finish, providing both style and functionality.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.7,
+        "totalRatings": 270,
+        "totalReviews": 130,
+        "starDistribution": {
+          "5": 180,
+          "4": 70,
+          "3": 15,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 43,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets4",
+      "highlight": "Others",
+      "rating": 3.9,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets7",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A leather wallet with a smooth finish, great for formal events, but currently out of stock.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 3.9,
+        "totalRatings": 180,
+        "totalReviews": 80,
+        "starDistribution": {
+          "5": 60,
+          "4": 50,
+          "3": 40,
+          "2": 20,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 44,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets5",
+      "highlight": "Popular",
+      "rating": 4.6,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets4",
+        "wallets3",
+        "wallets6"
+      ],
+      "description": "Popular leather wallet with a smooth finish, perfect for everyday casual use.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.6,
+        "totalRatings": 230,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 140,
+          "4": 70,
+          "3": 15,
+          "2": 5,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 45,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets6",
+      "highlight": "Best Sellers",
+      "rating": 4.9,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets4",
+        "wallets5",
+        "wallets3"
+      ],
+      "description": "A best-seller leather wallet with smooth finish, offering a premium experience for men's casual wear.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.9,
+        "totalRatings": 320,
+        "totalReviews": 150,
+        "starDistribution": {
+          "5": 250,
+          "4": 60,
+          "3": 10,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 46,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets7",
+      "highlight": "New Arrival",
+      "rating": 4.3,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A new arrival leather wallet, designed for those who appreciate luxury and simplicity.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.3,
+        "totalRatings": 180,
+        "totalReviews": 90,
+        "starDistribution": {
+          "5": 100,
+          "4": 50,
+          "3": 20,
+          "2": 10,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 47,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets8",
+      "highlight": "Popular",
+      "rating": 4.4,
+      "thumbnailImages": [
+        "wallets1",
+        "wallets2",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A popular leather wallet, offering an elegant smooth finish, designed for formal occasions.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.4,
+        "totalRatings": 210,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 120,
+          "4": 70,
+          "3": 20,
+          "2": 0,
+          "1": 0
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 48,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets9",
+      "highlight": "Top Rated",
+      "rating": 4.8,
+      "thumbnailImages": [
+        "wallets10",
+        "wallets11",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "Top-rated leather wallet with a smooth finish, combining elegance and practicality.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.8,
+        "totalRatings": 400,
+        "totalReviews": 200,
+        "starDistribution": {
+          "5": 320,
+          "4": 60,
+          "3": 10,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 49,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets10",
+      "highlight": "Best Sellers",
+      "rating": 4.5,
+      "thumbnailImages": [
+        "wallets9",
+        "wallets11",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A best-seller leather wallet with a smooth finish, designed for men’s casual wear.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.5,
+        "totalRatings": 350,
+        "totalReviews": 150,
+        "starDistribution": {
+          "5": 200,
+          "4": 100,
+          "3": 30,
+          "2": 15,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 50,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets11",
+      "highlight": "Others",
+      "rating": 3.8,
+      "thumbnailImages": [
+        "wallets9",
+        "wallets10",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "A luxury leather wallet with a smooth finish, currently out of stock.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 3.8,
+        "totalRatings": 220,
+        "totalReviews": 100,
+        "starDistribution": {
+          "5": 90,
+          "4": 70,
+          "3": 40,
+          "2": 10,
+          "1": 10
+        }
+      },
+      "commonDataReference": "commonData"
+    },
+    {
+      "id": 51,
+      "name": "Leather Wallet with smooth finish",
+      "price": 350,
+      "originalPrice": 550,
+      "image": "wallets12",
+      "highlight": "Popular",
+      "rating": 4.7,
+      "thumbnailImages": [
+        "wallets9",
+        "wallets10",
+        "wallets4",
+        "wallets5",
+        "wallets6"
+      ],
+      "description": "Popular leather wallet with smooth finish, offering an elegant look for luxury enthusiasts.",
+      "sizeOptions": [
+        "One Size"
+      ],
+      "ratings": {
+        "averageRating": 4.7,
+        "totalRatings": 350,
+        "totalReviews": 170,
+        "starDistribution": {
+          "5": 250,
+          "4": 70,
+          "3": 20,
+          "2": 5,
+          "1": 5
+        }
+      },
+      "commonDataReference": "commonData"
+    }
+  ]
 }
