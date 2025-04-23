@@ -15,7 +15,6 @@ function Filter({ category }) {
 
     return (
         <Box sx={{ position: 'relative', padding: { xs: '10px', sm: '20px' } }}>
-            {/* Mobile Filter Toggle Button */}
             {isMobile && (
                 <Box sx={{ 
                     display: 'flex', 
@@ -41,7 +40,6 @@ function Filter({ category }) {
             )}
 
             <Grid container spacing={2}>
-                {/* Desktop Filter Sidebar */}
                 {!isMobile && (
                     <Grid item xs={12} sm={4} md={3} lg={2.5}>
                         <Box sx={{ 
@@ -55,13 +53,11 @@ function Filter({ category }) {
                     </Grid>
                 )}
 
-                {/* Product List */}
                 <Grid item xs={12} sm={!isMobile ? 8 : 12} md={!isMobile ? 9 : 12} lg={!isMobile ? 9.5 : 12}>
                     <ProductList category={category} />
                 </Grid>
             </Grid>
 
-            {/* Mobile Filter Drawer */}
             <Drawer
                 anchor="left"
                 open={mobileFilterOpen}

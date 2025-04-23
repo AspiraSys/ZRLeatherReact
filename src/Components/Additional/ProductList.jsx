@@ -11,7 +11,6 @@ const ProductList = ({ category }) => {
   const products = useSelector((state) => state.products.products);
   const theme = useTheme();
   
-  // Custom breakpoints for more precise control
   const isExtraSmall = useMediaQuery('(max-width:500px)');
   const isSmall = useMediaQuery('(min-width:501px) and (max-width:899px)');
 
@@ -55,11 +54,10 @@ const ProductList = ({ category }) => {
     filteredProducts.sort((a, b) => a.price - b.price);
   }
 
-  // Calculate grid size based on screen width
   const getGridSize = () => {
-    if (isExtraSmall) return 12; // 1 card per row on extra small screens
-    if (isSmall) return 6;       // 2 cards per row on small screens
-    return 4;                    // 3 cards per row on medium and larger screens
+    if (isExtraSmall) return 12; 
+    if (isSmall) return 6;       
+    return 4;                    
   };
 
   return (

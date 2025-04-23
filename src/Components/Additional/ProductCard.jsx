@@ -1,13 +1,36 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Card, Box, Typography, IconButton, Chip, Zoom } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import FavoriteIcon from "@mui/icons-material/Favorite";
 import SearchIcon from "@mui/icons-material/Search";
 import ShareIcon from "@mui/icons-material/Share";
 import StarIcon from "@mui/icons-material/Star";
 import CustomButton from "../../Components/Additional/GlobalButton";
+import { useWishlist } from "../../Context/WishlistContext";
+import { useCart } from "../../Context/CartContext";
+import { flushSync } from "react-dom"; 
 
 const ProductCard = ({ product }) => {
   const [showIcons, setShowIcons] = useState(false);
+  const navigate = useNavigate();
+  const { toggleWishlistItem, isInWishlist } = useWishlist();
+  const { addToCart } = useCart();
+
+  const inWishlist = isInWishlist(product.id);
+
+  const handleWishlistClick = (e) => {
+    e.stopPropagation();
+    toggleWishlistItem(product);
+    setShowIcons(!showIcons);
+  };
+
+  const handleAddToCart = (e) => {
+    console.log("Clicked!", product);
+    flushSync(() => addToCart(product));
+    navigate("/cart");
+  };
+
 
   return (
     <Card
@@ -24,26 +47,27 @@ const ProductCard = ({ product }) => {
         transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
         "&:hover": {
           transform: "translateY(-5px)",
-          boxShadow: 6
-        }
+          boxShadow: 6,
+        },
       }}
     >
-      {/* Wishlist and Action Icons */}
       <Box sx={{ position: "absolute", top: 10, right: 10, zIndex: 2 }}>
         <IconButton
-          onClick={() => setShowIcons(!showIcons)}
+          onClick={handleWishlistClick}
           sx={{
             background: "#fff",
             width: 32,
             height: 32,
             boxShadow: 2,
-            "&:hover": {
-              backgroundColor: "white"
-            }
+            "&:hover": { backgroundColor: "white" },
           }}
           disableRipple
         >
-          <FavoriteBorderIcon sx={{ color: "#000", fontSize: 20 }} />
+          {inWishlist ? (
+            <FavoriteIcon sx={{ color: "red", fontSize: 20 }} />
+          ) : (
+            <FavoriteBorderIcon sx={{ color: "#000", fontSize: 20 }} />
+          )}
         </IconButton>
 
         <Box sx={{ position: "relative" }}>
@@ -56,7 +80,7 @@ const ProductCard = ({ product }) => {
                 top: 10,
                 right: 0,
                 gap: 0.8,
-                zIndex: 2
+                zIndex: 2,
               }}
             >
               <IconButton
@@ -84,7 +108,6 @@ const ProductCard = ({ product }) => {
         </Box>
       </Box>
 
-      {/* Product Image */}
       <Box sx={{ position: "relative", pt: "100%" }}>
         <Box
           component="img"
@@ -103,16 +126,14 @@ const ProductCard = ({ product }) => {
         />
       </Box>
 
-      {/* Product Details */}
       <Box
         sx={{
           p: { xs: 1.5, sm: 2, md: 2.5 },
           flexGrow: 1,
           display: "flex",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
-        {/* Product Name */}
         <Typography
           variant="h6"
           fontWeight={700}
@@ -124,13 +145,12 @@ const ProductCard = ({ product }) => {
             display: "-webkit-box",
             WebkitLineClamp: 2,
             WebkitBoxOrient: "vertical",
-            height: { xs: "48px", md: "52px" }
+            height: { xs: "48px", md: "52px" },
           }}
         >
           {product.name}
         </Typography>
 
-        {/* Product Price */}
         <Typography
           fontWeight={700}
           fontSize={{ xs: "15px", sm: "15px", md: "16px" }}
@@ -139,7 +159,6 @@ const ProductCard = ({ product }) => {
           ₹{product.price}
         </Typography>
 
-        {/* Rating and Highlight Badge */}
         <Box
           display="flex"
           alignItems="center"
@@ -149,40 +168,44 @@ const ProductCard = ({ product }) => {
           flexWrap={{ xs: "wrap", sm: "wrap", md: "nowrap", lg: "nowrap" }}
           gap={1}
         >
-          {/* Star Rating */}
           <Box display="flex" alignItems="center" gap={0.3}>
             {[...Array(5)].map((_, index) => (
               <StarIcon
                 key={index}
                 sx={{
                   color: index < product.rating ? "#FFC107" : "#ccc",
-                  fontSize: { xs: "16px", sm: "16px", md: "17px" }
+                  fontSize: { xs: "16px", sm: "16px", md: "17px" },
                 }}
               />
             ))}
           </Box>
-          
-          {/* Highlight Badge */}
-          <Chip
-            label={product.highlight}
-            sx={{
-              backgroundColor: "#4CAF50",
-              color: "#fff",
-              fontWeight: 400,
-              fontSize: "12px",
-              borderRadius: "15px",
-              height: "24px",
-              minWidth: { xs: "80px", sm: "80px", md: "50px" }
-            }}
-          />
+
+          {product.highlight && (
+            <Chip
+              label={product.highlight}
+              sx={{
+                backgroundColor: "#4CAF50",
+                color: "#fff",
+                fontWeight: 400,
+                fontSize: "12px",
+                borderRadius: "15px",
+                height: "24px",
+                minWidth: { xs: "80px", sm: "80px", md: "50px" },
+              }}
+            />
+          )}
         </Box>
 
-        {/* Action Buttons */}
         <Box
           display="flex"
           justifyContent="space-between"
           mt="auto"
-          flexDirection={{ xs: "column", sm: "column", md: "row", lg: "row" }}
+          flexDirection={{
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+          }}
           gap={1}
         >
           <CustomButton
@@ -194,9 +217,9 @@ const ProductCard = ({ product }) => {
             swipeHover={true}
             removeBorder={true}
             to={`/product/${product.id}`}
-            sx={{ 
+            sx={{
               fontSize: { xs: "13px", sm: "13px", md: "12px", lg: "10px" },
-              flex: { md: 1 }
+              flex: { md: 1 },
             }}
           />
 
@@ -208,12 +231,14 @@ const ProductCard = ({ product }) => {
             hoverStyles={{ backgroundColor: "#987760", color: "white" }}
             swipeHover={true}
             removeBorder={true}
-            to="/cart"
-            sx={{ 
+            onClick={handleAddToCart}  
+            sx={{
               fontSize: { xs: "13px", sm: "13px", md: "12px", lg: "14px" },
-              flex: { md: 1 }
+              flex: { md: 1 },
             }}
           />
+
+
         </Box>
       </Box>
     </Card>

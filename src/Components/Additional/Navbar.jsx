@@ -15,13 +15,11 @@ function Navbar() {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      // checking if the click was outside the dropdown
       if (dropdownRef.current && !dropdownRef.current.contains(e.target))
         setIsDropdownopen(false);
     };
     document.addEventListener("click", handleClickOutside);
     return () => {
-      //remove eventlistener when component unmounts
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);

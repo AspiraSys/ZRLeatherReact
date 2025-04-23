@@ -11,6 +11,8 @@ import ProductDescription from "../Components/Additional/ProductDescription";
 import ShippingDetails from "../Components/Additional/ShippingDetails";
 import ShippingDetails2 from "../Components/Additional/ShippingDetails2";
 import Cart from "../Components/Additional/Cart";
+import OrderConfirmation from "../Components/Additional/OrderConfirmation"
+import Wishlist from "../Components/Additional/Wishlist";
 
 function AppRoutes() {
   return (
@@ -26,9 +28,11 @@ function AppRoutes() {
           <Route path="/categories/wallets" element={<Wallets />} />
           <Route path="/categories/others" element={<Filter />} />
           <Route path="/product/:id" element={<ProductDescription />} />
-          <Route path="/ShippingDetails" element={<ShippingDetails />} />
-          <Route path="/ShippingDetails2" element={<ShippingDetails2 />} />
+          <Route path="/ShippingDetails/:id" element={<ShippingDetails />} />
+          <Route path="/ShippingDetails2/:id" element={<ShippingDetails2 />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/OrderConfirmation" element={<OrderConfirmation />} />
+          <Route path="/Wishlist" element={<Wishlist/>} />
         </Route>
       </Routes>
     </BrowserRouter>

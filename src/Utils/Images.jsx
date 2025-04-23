@@ -55,6 +55,34 @@ import wallets10 from "../../src/assets/Images/wallets-10.png";
 import wallets11 from "../../src/assets/Images/wallets-11.png";
 import wallets12 from "../../src/assets/Images/wallets-12.png";
 
+import popular from "../../src/assets/Images/popular.png";
+import bags from "../../src/assets/Images/bags.png";
+import belts from "../../src/assets/Images/belts.png";
+import fresh from "../../src/assets/Images/fresh.png";
+
+import gallery1 from "../../src/assets/Images/gallery1.png";
+import gallery2 from "../../src/assets/Images/gallery2.png";
+import gallery3 from "../../src/assets/Images/gallery3.png";
+import gallery4 from "../../src/assets/Images/gallery4.png";
+import gallery5 from "../../src/assets/Images/gallery5.png";
+import gallery6 from "../../src/assets/Images/gallery6.png";
+
+import slider1 from "../../src/assets/Images/slider1.png";
+import slider2 from "../../src/assets/Images/slider2.png";
+import slider3 from "../../src/assets/Images/slider3.png";
+import slider4 from "../../src/assets/Images/slider4.png";
+
+import flashsale from "../../src/assets/Images/flashsale.jpg";
+
+import classyboots from "../../src/assets/Images/classyboots.png";
+import classybags from "../../src/assets/Images/classybags.png";
+import classywallets from "../../src/assets/Images/classywallets.png";
+import classwallets from "../../src/assets/Images/classwallets.png";
+import classybelts from "../../src/assets/Images/classybelts.png"
+import classboots from "../../src/assets/Images/classboots.png"
+
+import about3 from "../../src/assets/Images/about3.png"
+
 const images = {
   logo: logo,
   footwear1: footwear1,
@@ -112,6 +140,33 @@ const images = {
   wallets10:wallets10,
   wallets11: wallets11,
   wallets12: wallets12,
+
+  popular:popular,
+  bags: bags,
+  belts: belts,
+  fresh: fresh,
+
+  gallery1: gallery1,
+  gallery2: gallery2,
+  gallery3: gallery3,
+  gallery4: gallery4,
+  gallery5: gallery5,
+  gallery6: gallery6,
+
+  slider1: slider1,
+  slider2: slider2,
+  slider3: slider3,
+  slider4: slider4,
+
+  flashsale: flashsale,
+
+  classyboots: classyboots,
+  classybags: classybags,
+  classywallets: classywallets,
+  classwallets: classwallets,
+  classybelts: classybelts,
+  classboots: classboots,
+  about3:about3
 }
 
 export default images;

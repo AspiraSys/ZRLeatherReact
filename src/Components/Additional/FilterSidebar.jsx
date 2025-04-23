@@ -20,7 +20,6 @@ const FilterSidebar = ({ category }) => {
   const dispatch = useDispatch();
   const filters = useSelector((state) => state.filters);
   
-  // Track expanded state for each accordion
   const [expanded, setExpanded] = useState({
     highlights: true,
     availability: false,

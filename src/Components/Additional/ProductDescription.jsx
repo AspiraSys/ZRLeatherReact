@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import {
   Box,
   Typography,
@@ -10,7 +10,7 @@ import {
   LinearProgress,
   Avatar,
   styled,
-  Grid, 
+  Grid,
   useMediaQuery,
   useTheme,
   Paper,
@@ -46,13 +46,13 @@ const RatingsReviews = ({ ratings }) => {
   return (
     <Box
       sx={{
-        display: "flex",flexDirection: { xs: "column", md: "row" },alignItems: "center",justifyContent: "space-between",mt: 4,gap: 4,
+        display: "flex", flexDirection: { xs: "column", md: "row" }, alignItems: "center", justifyContent: "space-between", mt: 4, gap: 4,
       }}>
       <Box textAlign="left" minWidth={200}>
         <Typography variant="h6" fontWeight={700}>
           Ratings & Reviews
         </Typography>
-        <Typography variant="h4" fontWeight={700} display="flex"alignItems="center" >
+        <Typography variant="h4" fontWeight={700} display="flex" alignItems="center" >
           {ratings.averageRating} <StarIcon fontSize="large" sx={{ ml: 0.5 }} />
         </Typography>
         <Typography variant="body2" color="gray">
@@ -66,7 +66,8 @@ const RatingsReviews = ({ ratings }) => {
               {star}★
             </Typography>
             <LinearProgress variant="determinate" value={(ratings.starDistribution[star] / ratings.totalRatings) * 100}
-              sx={{flexGrow: 1,height: 10,borderRadius: 5,backgroundColor: "#ddd","& .MuiLinearProgress-bar": {
+              sx={{
+                flexGrow: 1, height: 10, borderRadius: 5, backgroundColor: "#ddd", "& .MuiLinearProgress-bar": {
                   backgroundColor:
                     star === 5
                       ? "green"
@@ -127,7 +128,7 @@ const ReviewsFeedbackSection = ({ product }) => {
         </Box>
       );
     }
-    
+
     return (
       <Box>
         {product.reviews.map((review, index) => (
@@ -144,7 +145,7 @@ const ReviewsFeedbackSection = ({ product }) => {
             <Box
               sx={{
                 display: "flex",
-                flexDirection: { xs: "column", sm: "row" }, 
+                flexDirection: { xs: "column", sm: "row" },
                 justifyContent: "space-between",
                 mb: 2,
               }}
@@ -181,7 +182,7 @@ const ReviewsFeedbackSection = ({ product }) => {
         </Box>
       );
     }
-    
+
     return (
       <Box sx={{ p: 3 }}>
         {product.faq.map((item, index) => (
@@ -206,7 +207,7 @@ const ReviewsFeedbackSection = ({ product }) => {
         </Box>
       );
     }
-    
+
     return (
       <Box sx={{ p: 3 }}>
         {Object.entries(product.detailedDescription).map(([category, points]) => (
@@ -303,7 +304,6 @@ const ProductInfoSection = () => {
     >
       <Box sx={{ maxWidth: '1200px', mx: 'auto', width: '100%' }}>
         <Grid container spacing={2} alignItems="center" columns={{ xs: 12, sm: 12, md: 12 }}>
-          {/* Free Shipping */}
           <Grid item xs={12} sm={4}>
             <Box
               sx={{
@@ -327,7 +327,6 @@ const ProductInfoSection = () => {
             {isMobile && <Divider sx={{ my: 2 }} />}
           </Grid>
 
-          {/* Free Return */}
           <Grid item xs={12} sm={4}>
             <Box
               sx={{
@@ -354,7 +353,6 @@ const ProductInfoSection = () => {
             {isMobile && <Divider sx={{ my: 2 }} />}
           </Grid>
 
-          {/* 100% Secure */}
           <Grid item xs={12} sm={4}>
             <Box
               sx={{
@@ -384,6 +382,8 @@ const ProductInfoSection = () => {
 
 const ProductDescription = () => {
   const { id } = useParams();
+  console.log("idd", id);
+  const navigate = useNavigate();
   const [product, setProduct] = useState(null);
   const [mainImage, setMainImage] = useState("");
   const [wishlist, setWishlist] = useState(false);
@@ -393,26 +393,26 @@ const ProductDescription = () => {
 
   useEffect(() => {
     const productId = parseInt(id);
-    
+
     try {
       if (data && data.products && Array.isArray(data.products)) {
         const foundProduct = data.products.find(product => product.id === productId);
-      
+
         if (foundProduct) {
           const mergedProduct = mergeProductWithCommonData(foundProduct);
-          
+
           setProduct(mergedProduct);
           if (images[foundProduct.image]) {
             setMainImage(images[foundProduct.image]);
           }
-          
+
           if (foundProduct.sizeOptions?.length > 0) {
             setSelectedSize(foundProduct.sizeOptions[0]);
           }
-      
+
           const filtered = data.products.filter(p => p.id !== productId);
           const random = filtered.sort(() => 0.5 - Math.random()).slice(0, 3);
-          
+
           const mergedRecommended = random.map(p => mergeProductWithCommonData(p));
           setRecommendedProducts(mergedRecommended);
         }
@@ -425,12 +425,12 @@ const ProductDescription = () => {
       setIsLoading(false);
     }
   }, [id]);
-  
+
   useEffect(() => {
     console.log("Current product data:", product);
     console.log("Available images:", images);
   }, [product]);
-  
+
   if (isLoading) {
     return (
       <Box sx={{ display: 'flex', justifyContent: 'center', p: 5 }}>
@@ -468,7 +468,7 @@ const ProductDescription = () => {
           <Box sx={{ position: "relative", width: { xs: "100%", md: "45%" } }}>
             <CardMedia
               component="img"
-              image={mainImage || "/api/placeholder/400/400"} 
+              image={mainImage || "/api/placeholder/400/400"}
               alt={product.name}
               sx={{
                 borderRadius: "8px",
@@ -478,7 +478,10 @@ const ProductDescription = () => {
               }}
             />
             <IconButton
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                setWishlist(!wishlist);
+                navigate('/wishlist');
+              }}
               sx={{
                 position: "absolute",
                 top: "16px",
@@ -517,7 +520,7 @@ const ProductDescription = () => {
                   onClick={() => handleImageChange(product.image)}
                 />
               )}
-              
+
               {product.thumbnailImages && product.thumbnailImages.map((img, index) => (
                 images[img] ? (
                   <CardMedia
@@ -539,7 +542,6 @@ const ProductDescription = () => {
             </Box>
           </Box>
 
-          {/* Details Section */}
           <Box sx={{ width: { xs: "100%", md: "55%" } }}>
             <Typography variant="h5" fontWeight={700} mb={1}>
               {product.name}
@@ -604,26 +606,30 @@ const ProductDescription = () => {
             )}
 
             <Box display="flex" gap={2} mt={4} flexWrap="wrap">
-              <CustomButton 
-                text="Buy Now" 
-                borderColor="#987760" 
-                fontColor="#987760" 
-                fontSize="4px" 
-                padding={3.5} 
-                hoverStyles={{ backgroundColor: "#987760", color: "white" }} 
-                swipeHover={true} 
-                removeBorder={true} 
-                to='/ShippingDetails'
+              <CustomButton
+                text="Buy Now"
+                borderColor="#987760"
+                fontColor="#987760"
+                fontSize="4px"
+                padding={3.5}
+                hoverStyles={{ backgroundColor: "#987760", color: "white" }}
+                swipeHover={true}
+                removeBorder={true}
+                onClick={() => {
+                  console.log("Navigating to:", `/ShippingDetails/${id}`);
+                  navigate(`/ShippingDetails/${id}`);
+                }}
+                disabled={false}
               />
-              <CustomButton 
-                text="Add to Cart" 
-                borderColor="#987760" 
-                fontColor="#987760" 
-                fontSize="4px" 
-                hoverStyles={{ backgroundColor: "#987760", color: "white" }} 
-                swipeHover={true} 
-                removeBorder={true} 
-                startIcon={<ShoppingCartIcon />} 
+              <CustomButton
+                text="Add to Cart"
+                borderColor="#987760"
+                fontColor="#987760"
+                fontSize="4px"
+                hoverStyles={{ backgroundColor: "#987760", color: "white" }}
+                swipeHover={true}
+                removeBorder={true}
+                startIcon={<ShoppingCartIcon />}
                 to='/cart'
               />
             </Box>
@@ -631,8 +637,6 @@ const ProductDescription = () => {
         </Box>
 
         {product.ratings && <RatingsReviews ratings={product.ratings} />}
-        <ReviewsFeedbackSection product={product} />
-
         <Box sx={{ display: "flex", flexDirection: { xs: "column", md: "row" }, gap: 2, mt: 6 }}>
           <Box
             sx={{
@@ -643,9 +647,9 @@ const ProductDescription = () => {
               minHeight: "200px",
             }}
           >
-            {images.footwear1 ? (
+            {images.footwear11 ? (
               <img
-                src={images.footwear1}
+                src={images.flashsale}
                 alt="Flash Sale"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
@@ -719,6 +723,9 @@ const ProductDescription = () => {
             </Box>
           </Box>
         </Box>
+        <ReviewsFeedbackSection product={product} />
+
+
       </Box>
       <ProductInfoSection />
     </>

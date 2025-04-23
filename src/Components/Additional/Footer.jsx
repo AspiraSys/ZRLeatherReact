@@ -9,7 +9,6 @@ const Footer = () => {
       <Box sx={{ bgcolor: '#f5ebe2', py: 4, px: { xs: 2, md: 4 } }}>
         <Box sx={{ maxWidth: '1100px', mx: 'auto' }}>
           <Grid container spacing={1}>
-            {/* Company Info */}
             <Grid item xs={12} sm={6} md={4} sx={{ fontSize: '25px' }}>
               <Box>
                 <img 
@@ -29,7 +28,6 @@ const Footer = () => {
               </Typography>
             </Grid>
 
-            {/* Sections */}
             <Grid item xs={6} sm={3} md={2} sx={{ fontSize: '25px' }}>
               <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 5, color: '#3c3c3c' }}>
                 Sections
@@ -43,7 +41,6 @@ const Footer = () => {
               ))}
             </Grid>
 
-            {/* Help Center */}
             <Grid item xs={6} sm={3} md={2} sx={{ fontSize: '25px'}}>
               <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 5, color: '#3c3c3c' }}>
                 Help Center
@@ -57,7 +54,6 @@ const Footer = () => {
               ))}
             </Grid>
 
-            {/* Newsletter */}
             <Grid item xs={12} sm={6} md={4} sx={{ fontSize: '25px' }}>
               <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 5, color: '#3c3c3c' }}>
                 Follow us
@@ -86,7 +82,6 @@ const Footer = () => {
         </Box>
       </Box>
 
-      {/* Copyright */}
       <Box sx={{ bgcolor: '#e3d5c3', color: '#3c3c3c', py: 2, textAlign: 'center', fontSize: '1rem' }}>
         All copy rights are under © 2019
       </Box>

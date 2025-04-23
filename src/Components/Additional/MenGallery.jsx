@@ -1,8 +1,6 @@
 
 import React from "react";
 import { Box, Typography, Card, CardContent } from "@mui/material";
-import TargetIcon from "@mui/icons-material/TrackChanges"; // Icon for Mission
-import LightbulbIcon from "@mui/icons-material/Lightbulb"; // Icon for Vision
 import { TbTargetArrow } from "react-icons/tb";
 import { HiOutlineLightBulb } from "react-icons/hi";
 
@@ -18,7 +16,6 @@ const MenGallery = () => {
         mb:{sx:3,lg:7,md:7},
       }}
     >
-      {/* Large Semi-Circle Background Shape */}
       <Box
         sx={{
           position: "absolute",
@@ -34,9 +31,7 @@ const MenGallery = () => {
       />
 
       <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", position: "relative", zIndex: 1 }}>
-        {/* Left Side: Mission & Vision Cards */}
         <Box sx={{ flex: 1, display: "flex", flexDirection: "column", gap: 3 }}>
-          {/* Mission Card */}
           <Card sx={{ display: "flex", alignItems: "center", padding: 2, maxWidth: "380px", boxShadow: 3,overflow:'visible' }}>
             <Box
               sx={{
@@ -89,7 +84,6 @@ const MenGallery = () => {
           </Card>
         </Box>
 
-        {/* Right Side: "What We Stand For" Text */}
         <Box sx={{ flex: 1, paddingLeft: { xs: 0, md: 6 }, marginTop: { xs: 4, md: 0 } }}>
           <Typography variant="h5" fontWeight="bold">
             What We Stand For
@@ -110,4 +104,3 @@ export default MenGallery;
 
 
 
-// https://randomuser.me/api/portraits/men/1.jpg

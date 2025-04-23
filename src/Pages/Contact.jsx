@@ -71,8 +71,8 @@ export default function Contact() {
   const [height, setHeight] = useState(260);
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 576) setHeight(200); // Mobile
-      else if (window.innerWidth < 768) setHeight(200); // Tablet
+      if (window.innerWidth < 576) setHeight(200); 
+      else if (window.innerWidth < 768) setHeight(200); 
       else setHeight(260);
     };
     handleResize();
@@ -93,7 +93,6 @@ export default function Contact() {
             justifyContent: "center",
           }}
         >
-          {/* Left Section - Contact Info */}
           <Grid
             size={{ lg: 6, md: 6, xs: 12 }}
             sx={{ order: { lg: 1, md: 1, sm: 2, xs: 2 } }}
@@ -173,7 +172,6 @@ export default function Contact() {
             </Box>
           </Grid>
 
-          {/* Right Section - Contact Form */}
           <Grid
             size={{ lg: 6, md: 6, xs: 12 }}
             sx={{ order: { sm: 1, lg: 2, md: 2, xs: 1 } }}
