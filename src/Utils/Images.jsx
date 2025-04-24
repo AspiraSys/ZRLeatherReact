@@ -81,7 +81,11 @@ import classwallets from "../../src/assets/Images/classwallets.png";
 import classybelts from "../../src/assets/Images/classybelts.png"
 import classboots from "../../src/assets/Images/classboots.png"
 
+import about1 from "../../src/assets/Images/about1.png"
+import about2 from "../../src/assets/Images/about2.png"
 import about3 from "../../src/assets/Images/about3.png"
+import aboutus from "../../src/assets/Images/aboutus.png"
+import AboutUsbanner from "../../src/assets/Images/AboutUsbanner.png"
 
 const images = {
   logo: logo,
@@ -166,7 +170,12 @@ const images = {
   classwallets: classwallets,
   classybelts: classybelts,
   classboots: classboots,
-  about3:about3
+
+  about1:about1,
+  about2:about2,
+  about3:about3,
+  aboutus:aboutus,
+  AboutUsbanner:AboutUsbanner,
 }
 
 export default images;

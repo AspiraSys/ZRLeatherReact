@@ -13,10 +13,11 @@ import { TbTargetArrow } from "react-icons/tb";
 import { HiOutlineLightBulb } from "react-icons/hi";
 import Bar from "../Components/Additional/Bar";
 import Grid from "@mui/material/Grid2";
+import Images from "../Utils/Images"
 
 
 const Banner = styled(Box)({
-  backgroundImage: "url(src/assets/images/AboutUs-banner.png)",
+  backgroundImage: `url(${Images.AboutUsbanner})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
   height: "250px",
@@ -91,19 +92,19 @@ const AboutUs = () => {
       title: "Premium Leather Selection",
       description:
         "We source the finest quality leather from trusted suppliers, ensuring durability and texture.",
-      image: "src/assets/images/about-1.png",
+      image: Images.about1,
     },
     {
       title: "Expert Craftsmanship",
       description:
         "Our skilled artisans meticulously handcraft each piece, blending traditional techniques.",
-      image: "src/assets/images/about-2.png",
+      image: Images.about2,
     },
     {
       title: "Quality Assurance",
       description:
         "Every product undergoes rigorous quality checks to maintain the highest standards.",
-      image: "src/assets/images/about3.png",
+      image: Images.about3,
     },
   ];
 
@@ -148,7 +149,7 @@ const AboutUs = () => {
           <Card sx={{ backgroundColor: "transparent", boxShadow: "none", display: "flex", justifyContent: "center" }}>
             <CardMedia
               component="img"
-              image="src/assets/images/aboutus.png"
+              image={Images.aboutus}
               alt="Leather Products"
               sx={{ maxWidth: "80%", height: "auto", width: { xs: "80%", md: "100%" } }}
             />
